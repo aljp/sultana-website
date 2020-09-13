@@ -4,10 +4,7 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    className="sultana-header"
   >
     <div
       style={{
@@ -20,8 +17,9 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `lightgreen`,
             textDecoration: `none`,
+            mixBlendMode: 'difference'
           }}
         >
           {siteTitle}
