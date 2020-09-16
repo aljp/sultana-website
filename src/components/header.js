@@ -12,6 +12,7 @@ const Header = ({ siteTitle }) => (
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
+      className="logo-wrapper"
     >
       <h1 style={{ margin: 0 }}>
         <Link
@@ -25,6 +26,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      {/* <h1 className="logo-title">{siteTitle}</h1> */}
     </div>
   </header>
 )
