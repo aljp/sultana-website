@@ -6,11 +6,11 @@ const LandingHeader = (props) => {
   return (
     <div style={{ zIndex: -1, marginTop: '20px', boxShadow: '0px 0px 4px black'}}>
       <Parallax 
-        strength={200}
+        strength={500}
         bgImage={images}
       >
-        <div style={{height: '70vh', position: 'relative'}}>
-          <div style={{position: 'absolute', top: '20vh', left: '20%', mixBlendMode: 'difference', color: "lightgreen", fontSize: '56px'}}>
+        <div style={{height: '50vh', position: 'relative'}}>
+          <div style={{position: 'absolute', top: '20vh', left: '20%', mixBlendMode: 'difference', color: "gray", fontSize: '56px'}}>
             Prepare to be Websited
           </div>
         </div>
