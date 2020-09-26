@@ -1,9 +1,27 @@
 @import 'colors.scss';
 @import 'header.scss';
 @import 'suit.scss';
+@import 'home.scss';
+@import 'contact.scss';
+@import 'footer.scss';
+
+html {
+  height: 100%;
+  min-height: 100vh;
+}
 
 body {
-  background-image: url('../images/foamy.jpg');
+  background-image: url('../images/paint-strokes.jpg');
   // background-attachment: fixed;
   background-size: cover;
+
+  height: 100%;
+  min-height: 100vh;
+  margin-bottom:208px;
+
+  .btn {
+    background-color: $sultana-secondary
+  }
 }
+
+

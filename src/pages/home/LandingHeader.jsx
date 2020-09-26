@@ -4,7 +4,7 @@ import { Parallax } from 'react-parallax';
 import images from '../../images/landing-image.png'
 
 const LandingHeader = (props) => (
-  <div style={{ zIndex: -1, marginTop: '20px', boxShadow: '0px 0px 4px black'}}>
+  <div style={{ zIndex: -1, boxShadow: '0px 0px 4px black'}}>
     <Parallax 
       strength={500}
       bgImage={images}

@@ -1,0 +1,30 @@
+.ContactForm {
+  padding: 16px;
+  text-align: center;
+
+  h5 {
+    i {
+      text-decoration: underline;
+    }
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea.materialize-textarea {
+    height: 100px;
+  }
+
+  button {
+    margin: auto;
+    width:200px;
+  }
+}
+
+.contactFormWrapper {
+  margin: auto;
+  background: white;
+  width: 600px;
+  box-shadow: 0 0 4px gray;
+}

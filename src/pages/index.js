@@ -9,20 +9,16 @@ import LandingHeader from "./home/LandingHeader"
 import ImageTextPanel from "components/ImageTextPanel"
 import ProductContent from "pages/home/ProductContent"
 import 'styling/home.scss'
-import CardPanel from "pages/home/CardPanel";
+import ServiceCards from "pages/home/ServicesCards";
 import SEOPanel from "pages/home/SEOPanel";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <LandingHeader />
-    <CardPanel />
+    <ServiceCards />
     <ProductContent />
     <SEOPanel />
-    <ImageTextPanel 
-      imagePanel={<Image />}
-      contentPanel={<ProductContent />}
-    />
   </Layout>
 )
 

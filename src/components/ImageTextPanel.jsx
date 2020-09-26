@@ -11,7 +11,7 @@ const ImageTextPanel = (props) => {
   return (
     <Row style={{ marginTop: '20px', maxWidth: '90vw', backgroundColor: 'white'  }}>
       <div >
-        <Col m={6}>
+        <Col m={6} className="imageColumn">
           {imagePanel}
         </Col>
         <Col m={5}>

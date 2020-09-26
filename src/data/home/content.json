@@ -6,15 +6,18 @@
   "serviceCards": [
     {
       "name": "Development",
-      "content": "Get development in a wide range of technologies"
+      "content": "Get development in a wide range of technologies",
+      "icon": "gavel"
     },
     {
       "name": "SEO",
-      "content": "SEO integration and assistance"
+      "content": "SEO integration and assistance",
+      "icon": "face"
     },
     {
       "name": "Automation",
-      "content": "Find out how we can improve your internal processes"
+      "content": "Find out how we can improve your internal processes",
+      "icon": "fast_forward"
     }
   ]
 }

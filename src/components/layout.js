@@ -8,9 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header"
+import Nav from "./nav";
 import 'materialize-css';
 import 'styling/layout.scss';
+import SultanaFooter from "components/footer";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,12 +25,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <React.Fragment>
+      <Nav siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-      <footer>
-      </footer>
-    </>
+      <SultanaFooter />
+    </React.Fragment>
   )
 }
 
