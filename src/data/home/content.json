@@ -1,0 +1,20 @@
+{
+  "services": {
+    "content": "Delivering high quality technical solutions is what drives us and with over 10 years experience in the industry, we have the expertise to back it up. We have experience across a wide range of platforms and technologies mean that no matter the problem, we’ll have the solution. Your success is our goal.",
+    "seo": "We service all aspects of technical SEO and tooling as well as full-scale integration of SEO into your marketing strategy"
+  },
+  "serviceCards": [
+    {
+      "name": "Development",
+      "content": "Get development in a wide range of technologies"
+    },
+    {
+      "name": "SEO",
+      "content": "SEO integration and assistance"
+    },
+    {
+      "name": "Automation",
+      "content": "Find out how we can improve your internal processes"
+    }
+  ]
+}
