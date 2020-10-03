@@ -1,5 +1,7 @@
 @import 'colors.scss';
 
+$corner-size: 36px;
+
 .ProductContent {
   p {
     font-size: 24px;
@@ -10,6 +12,10 @@
   > div {
     height:500px
   }
+}
+
+.card {
+  box-shadow: none !important;
 }
 
 .service-cards {
@@ -25,20 +31,61 @@
     text-align: center;
     height: 200px;
     overflow-y: hidden;
+    position: relative;
+    border-radius: 4px;
+    transition: height 0.6s;
+
 
     &:last-child {
       margin-right: 0;
     }
 
     &:hover {
-      box-shadow: 0px 0px 12px $sultana-primary;
       height: 500px;
-      transition: height 0.6s;
+
+      &:before {
+        height: $corner-size;
+        width: $corner-size;
+        box-shadow: 2px 2px 8px $shadow-color;
+      }
+
+      &:after {
+        border-top-width: $corner-size;
+        border-left-width: $corner-size;
+        transition: border-width 0.6s;  
+      }
 
       .card-body {
         display: block;
         margin-top: 40px;
       }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 0;
+      width: 0;
+      box-shadow: 0px 0px 0px $shadow-color;
+      transition: all 0.6s;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: 0;
+      right: 0;
+      border-top-width: 0px;
+      border-top-color: $background-primary;
+      border-top-style: solid;
+      border-left-width: 0px;
+      border-left-style: solid;
+      border-left-color: white;
+      transition: all 0.6s;
     }
 
     .card-body {
@@ -52,7 +99,7 @@
 
   &-wrapper {
     position: relative;
-    height: 80vh;
+    height: 76vh;
   }
 
   &-content {
