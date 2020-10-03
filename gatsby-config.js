@@ -10,10 +10,12 @@ module.exports = {
       options: {
         fonts: [
           `Lobster`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+          `Montserrat`,
+          `Montserrat\:300,400,400i,900b`,
+          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-      }
+        display: "swap",
+      },
     },
     `gatsby-plugin-react-helmet`,
     {

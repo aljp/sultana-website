@@ -23,16 +23,11 @@
     flex: 1 0 33%;
     margin-right: 20px;
     text-align: center;
-    border-radius: 10px;
     height: 200px;
     overflow-y: hidden;
 
     &:last-child {
       margin-right: 0;
-    }
-
-    .card-body {
-      display: none;
     }
 
     &:hover {
@@ -45,27 +40,31 @@
         margin-top: 40px;
       }
     }
+
+    .card-body {
+      display: none;
+    }
   }
 }
 
 .hero {
   z-index: -1;
-  box-shadow: 0 0 4px $shadow-color;
 
   &-wrapper {
     position: relative;
-    height: 94vh;
+    height: 80vh;
   }
 
   &-content {
     position: absolute;
     top: 20vh; 
-    left: 20%;
+    left: 10%;
   }
 
   &-title {
     mix-blend-mode: difference; 
     color: gray; 
     font-size: 56px;
+    font-weight: 900;
   }
 }
