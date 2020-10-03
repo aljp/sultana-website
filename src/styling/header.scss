@@ -1,8 +1,7 @@
 @import 'colors.scss';
 
 .sultana-nav {
-    // background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(123,211,137,1) 90%);
-    background-color: #A7A09C;
+    background-color: $sultana-primary;
     box-shadow: 0px 2px 4px black;
     z-index: 99;
     padding-left: 100px;
@@ -28,8 +27,14 @@
         color: black;
     }
     a {
-        color: black;
-        font-weight: 900;
+      color: $sultana-tertiary;
+      font-weight: 900;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
     }
 }
 
