@@ -25,11 +25,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <React.Fragment>
+    <div className="page-container">
       <Nav siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <SultanaFooter />
-    </React.Fragment>
+    </div>
   )
 }
 
