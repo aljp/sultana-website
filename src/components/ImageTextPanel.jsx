@@ -5,16 +5,13 @@ import LandingImage from '../images/landing-image.png'
 
 const ImageTextPanel = (props) => {
   const { imagePanel, contentPanel, reverse } = props;
-
-
-
   return (
-    <Row style={{ marginTop: '20px', maxWidth: '90vw', backgroundColor: 'white'  }}>
+    <Row style={{ marginTop: '20px', maxWidth: '90vw'  }}>
       <div >
         <Col m={6} className="imageColumn">
           {imagePanel}
         </Col>
-        <Col m={5}>
+        <Col m={5} style={{ float: 'right' }}>
           {contentPanel}
         </Col>
       </div>
