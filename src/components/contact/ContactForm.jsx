@@ -1,5 +1,6 @@
-import React, { useReducer, Fragment } from "react"
+import React, { useReducer, useState, Fragment } from "react"
 import { TextInput, Button, Textarea } from "react-materialize"
+import axios from "axios"
 
 const reducer = (state, { field, value }) => ({ ...state, [field]: value })
 
@@ -11,16 +12,50 @@ const ContactForm = () => {
     description: "",
   }
   const [state, dispatch] = useReducer(reducer, initialState)
+  const [loading, setLoading] = useState(false)
+  const [sent, setSent] = useState(false)
 
   const handleOnChange = (field, value) => {
     dispatch({ field, value })
   }
-  const handleOnClick = (event) => {
-    // TODO: Handle contact form on click
-  };
+
+  const handleOnClick = async event => {
+    const API_HOST = "http://localhost:5000"
+
+    if (loading || sent) return
+
+    setLoading(true)
+    // let res = await axios.post(`${API_HOST}/contact`, {
+    //   name,
+    //   email,
+    //   subject,
+    //   description,
+    // })
+    let res = await axios({
+      method: "POST",
+      url: `${API_HOST}/contact`,
+      data: {
+        name,
+        email,
+        subject,
+        description,
+      },
+    });
+    setLoading(false)
+
+    switch (res.status) {
+      case 200:
+        setSent(true)
+        return
+      default:
+        return
+    }
+  }
+
   const { name, email, subject, description } = state
   return (
     <div className="u-flex u-flexCol ContactForm">
+      {sent && <div>Message sent!</div>}
       <h5>
         Let us know how we can help <i>you</i>
       </h5>
