@@ -1,0 +1,27 @@
+@import 'colors.scss';
+
+.generic-header {
+  background-color: $sultana-primary;
+  background-color: rgba($sultana-primary, 0.92);
+  color: $background-primary;
+  min-height: 100px;
+  padding: 50px 100px 50px 100px;
+  .header-text {
+    margin-left:100px;
+    max-width: 80%;
+    h2 {
+      margin: 0;
+      font-size:14px;
+    }
+
+    h3 {
+      margin: 0;
+      color: white;
+    }
+  }
+}
+
+.about-content {
+  width: 70%;
+  margin: 50px auto;
+}
