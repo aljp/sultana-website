@@ -4,14 +4,14 @@ import { Parallax } from 'react-parallax';
 import images from '../../images/landing-image.png'
 
 const LandingHeader = (props) => (
-  <div style={{ zIndex: -1, boxShadow: '0px 0px 4px black'}}>
+  <div className="hero">
     <Parallax 
       strength={500}
       bgImage={images}
     >
-      <div style={{height: '50vh', position: 'relative'}}>
-        <div style={{position: 'absolute', top: '20vh', left: '20%'}}>
-          <div style={{mixBlendMode: 'difference', color: "gray", fontSize: '56px'}}>
+      <div className="hero-wrapper">
+        <div className="hero-content">
+          <div className="hero-title">
             Prepare to be Websited
           </div>
           <div>
