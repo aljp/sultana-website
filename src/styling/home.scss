@@ -33,15 +33,17 @@ $corner-size: 36px;
     overflow-y: hidden;
     position: relative;
     border-radius: 4px;
-    transition: height 0.6s;
-
+    transition: height 0.6s ease, background-color 0.5s ease-out;
+    background-color: $background-primary;
+    min-width: 300px;
 
     &:last-child {
       margin-right: 0;
     }
 
-    &:hover {
+    @mixin active-card {
       height: 500px;
+      background-color: white;
 
       &:before {
         height: $corner-size;
@@ -52,13 +54,28 @@ $corner-size: 36px;
       &:after {
         border-top-width: $corner-size;
         border-left-width: $corner-size;
-        transition: border-width 0.6s;  
+        border-left-color: white;
       }
 
       .card-body {
         display: block;
         margin-top: 40px;
       }
+      .service-card-icon-wrapper {
+        background-color: $sultana-primary;
+
+        svg {
+          fill: white;
+        }
+      }
+    }
+
+    &:hover {
+      @include active-card
+    }
+
+    &.active {
+      @include active-card
     }
 
     &:before {
@@ -84,27 +101,37 @@ $corner-size: 36px;
       border-top-style: solid;
       border-left-width: 0px;
       border-left-style: solid;
-      border-left-color: white;
-      transition: all 0.6s;
+      border-left-color: $background-primary;
+      transition: border-width 0.6s, border-color 0.3s;
     }
 
     .card-body {
       display: none;
+    }
+    &-icon-wrapper {
+      background: white;
+      padding: 20px;
+      border-radius: 50%;
+      transition: all 0.5s;
+
+      svg {
+        transition: all 0.5s;
+      }
     }
   }
 }
 
 .hero {
   z-index: -1;
-
   &-wrapper {
     position: relative;
     height: 76vh;
+    overflow-y: hidden;
   }
 
   &-content {
     position: absolute;
-    top: 20vh; 
+    top: 10vw; 
     left: 10%;
   }
 
@@ -113,5 +140,21 @@ $corner-size: 36px;
     color: gray; 
     font-size: 56px;
     font-weight: 900;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+  }
+
+  img {
+    z-index: 998;
+    mix-blend-mode: multiply;
+    width: 50vw;
+    position: absolute;
   }
 }
