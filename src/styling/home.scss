@@ -1,4 +1,4 @@
-@import 'colors.scss';
+@import "colors.scss";
 
 $corner-size: 36px;
 
@@ -10,7 +10,7 @@ $corner-size: 36px;
 .imageColumn {
   padding-left: 0 !important;
   > div {
-    height:500px
+    height: 500px;
   }
 }
 
@@ -71,15 +71,15 @@ $corner-size: 36px;
     }
 
     &:hover {
-      @include active-card
+      @include active-card;
     }
 
     &.active {
-      @include active-card
+      @include active-card;
     }
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -90,7 +90,7 @@ $corner-size: 36px;
     }
 
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       height: 0;
       width: 0;
@@ -125,30 +125,34 @@ $corner-size: 36px;
   z-index: -1;
   &-wrapper {
     position: relative;
-    height: 76vh;
     overflow-y: hidden;
   }
 
   &-content {
-    position: absolute;
-    top: 10vw; 
-    left: 10%;
-  }
+    @media (min-width: 320px) {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+    }
 
-  &-title {
-    mix-blend-mode: difference; 
-    color: gray; 
-    font-size: 56px;
-    font-weight: 900;
-
-    @media (max-width: 768px) {
+    @media (min-width: 801px) {
+      position: absolute;
+      top: 10vw;
+      left: 10%;
       font-size: 36px;
+      text-align: left;
     }
   }
 
-  video {
-    position: absolute;
-    top: 0;
+  &-title {
+    mix-blend-mode: difference;
+    color: gray;
+    font-size: 36px;
+    font-weight: 900;
+
+    @media (min-width: 768px) {
+      font-size: 56px;
+    }
   }
 
   img {
@@ -156,5 +160,14 @@ $corner-size: 36px;
     mix-blend-mode: multiply;
     width: 50vw;
     position: absolute;
+
+    @media (min-width: 320px) {
+      display: none;
+    }
+
+    @media (min-width: 801px) {
+      display:block;
+    }
+    
   }
 }

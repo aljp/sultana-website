@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from 'gatsby';
-import { Footer } from "react-materialize"
-import logo from "images/sultana wally.svg"
+import { Footer } from "react-materialize";
 
 // TODO: Implement footer
 // TODO: Implement social media links
@@ -22,11 +21,6 @@ const SultanaFooter = props => (
         </li>
       </ul>
     }
-    // moreLinks={
-    //   <a className="grey-text text-lighten-4 right" href="#!">
-    //     More Links
-    //   </a>
-    // }
   >
     <h5 className="white-text">Sultana Digital</h5>
     <p className="grey-text text-lighten-4">
