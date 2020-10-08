@@ -1,27 +1,44 @@
+import React, { useRef } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
 import logo from 'images/logos/SULTANA_white.svg'
+import { ReactComponent as Menu } from 'images/menu.svg';
 
-const Nav = ({ siteTitle }) => (
-  <header
-    className="sultana-nav u-flex u-flexJustifyBetween u-flexAlignItemsCenter"
-  >
-    <div
-      className="logo-wrapper"
+const Nav = ({ siteTitle }) => {
+  const menuRef = useRef(null);
+  const menuButtonRef = useRef(null);
+
+  const handleOnClick = () => {
+    menuRef.current.classList.toggle('open')
+    menuButtonRef.current.classList.toggle('open')
+  }
+
+  return (
+    <header
+      className="sultana-nav u-flex u-flexJustifyBetween u-flexAlignItemsCenter"
     >
-      <Link to="/">
-        <img src={logo} style={{width: '160px'}}/>
-      </Link>
-      {/* <h1 className="logo-title">{siteTitle}</h1> */}
-    </div>
-    <div>
-      <Link to="/">Home</Link>
-      <Link to="/about">About Us</Link>
-      <Link to="/contact">Contact</Link>
+      <div
+        className="logo-wrapper"
+      >
+        <Link to="/">
+          <img src={logo} style={{width: '160px'}}/>
+        </Link>
       </div>
-  </header>
-)
+      <button onClick={handleOnClick} ref={menuButtonRef}><Menu /></button>
+      <ul className="nav-links" ref={menuRef}>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About Us</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </header>
+  );
+};
 
 Nav.propTypes = {
   siteTitle: PropTypes.string,

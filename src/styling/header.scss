@@ -1,40 +1,118 @@
 @import 'colors.scss';
 
 .sultana-nav {
-    background-color: $sultana-primary;
-    // box-shadow: 0px 2px 4px black;
-    z-index: 99;
-    padding-left: 100px;
-    padding-right: 100px;
+  position: relative;
+  background-color: $sultana-primary;
+  z-index: 99;
+  padding-left: 100px;
+  padding-right: 100px;
 
-    .logo-wrapper {
-        position: relative;
+  .logo-wrapper {
+    position: relative;
 
-        .logo-title {
-            position: absolute;
-            top: -20px;
-            left: 11px;
-            color: rgba(0, 0, 0, 0.5);
-            mix-blend-mode: initial;
-        }
+    .logo-title {
+      position: absolute;
+      top: -20px;
+      left: 11px;
+      color: rgba(0, 0, 0, 0.5);
+      mix-blend-mode: initial;
     }
+  }
 
-    h1 {
-        font-family: Lobster;
-        font-weight: 900;
-        position: relative;
-        z-index: 99;
-        color: black;
-    }
-    a {
-      color: $sultana-tertiary;
-      font-weight: 900;
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+
+    li {
       margin-right: 10px;
-
+      
       &:last-child {
         margin-right: 0;
       }
-
+      a {
+        color: $sultana-tertiary;
+        font-weight: 900;
+    
+        
+      }
     }
+  }
+
+  h1 {
+      font-family: Lobster;
+      font-weight: 900;
+      position: relative;
+      z-index: 99;
+      color: black;
+  }
+
+
+  
+  button {
+    display: none;
+    background-color: inherit !important;
+    border: none;
+  }
+
+  @media (max-width: 767px) {
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+
+    button {
+      display: block;
+    }
+    .nav-links {
+      background-color: $sultana-primary;
+      flex-direction: column;
+      position: absolute;
+      right: -900px;
+      bottom: -194px;
+      transition: right 0.6s;
+      z-index: 1;
+
+      &.open {
+        display: flex;
+        right: 0;
+      }
+
+      li {
+        margin: 0;
+        text-align: center;
+        height: 60px;
+        width: 200px;
+        border-top: 1px solid $sultana-tertiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    svg {
+      width: 20px;
+      .menu_svg__bottom {
+        transition: all 0.6s;
+      }
+      .menu_svg__top {
+        transition: all 0.6s;
+      }
+      .menu_svg__middle {
+        opacity: 1;
+        transition: all 0.6s;
+      }
+    }
+    
+    button.open {
+      .menu_svg__bottom {
+        transform: translate(120px, 24px) rotate(45deg);
+      }
+      .menu_svg__top {
+        transform: translate(-153px, 150px) rotate(-45deg);
+      }
+      .menu_svg__middle {
+        opacity: 0;
+      }
+    }
+  }
 }
 

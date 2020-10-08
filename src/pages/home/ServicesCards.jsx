@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby"
 import { Row, Card } from "react-materialize"
-import { ReactComponent as Development } from '../../images/serviceCards/004-programming-1.svg';
+import { ReactComponent as Development } from 'images/serviceCards/004-programming-1.svg';
 import { ReactComponent as Optimization } from 'images/serviceCards/002-computer.svg';
 import { ReactComponent as Seo } from 'images/serviceCards/005-analytics.svg';
 
