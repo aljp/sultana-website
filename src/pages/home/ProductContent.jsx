@@ -14,7 +14,7 @@ const ProductContent = (props) => {
       }
       placeholderImage: file(relativePath: { eq: "luca-bravo-XJXWbfSo2f0-unsplash.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1920) {
+          fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }

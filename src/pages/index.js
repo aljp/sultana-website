@@ -13,10 +13,10 @@ const IndexPage = () => (
     <SEO title="Home" />
     <LandingHeader />
     <ServiceCards />
-    <div style={{paddingTop: '20vh', paddingBottom: '20vh'}}>
+    <div style={{paddingTop: '10vw', paddingBottom: '10vw'}}>
       <ProductContent />
     </div>
-    <div style={{paddingTop: '20vh', paddingBottom: '20vh'}}>
+    <div style={{paddingTop: '10vw', paddingBottom: '10vw'}}>
       <SEOPanel />
     </div>
   </Layout>
