@@ -20,6 +20,12 @@ const ServiceCards = props => {
       }
     }
   `)
+  let iconMap = {
+    'development': <Development />,
+    'optimization': <Optimization />,
+    'seo': <Seo />,
+    'ecommerce': <Ecommerce />
+  };
 
   const handleOnClick = (e) => e.currentTarget.classList.toggle('active');
   const handleMouseOver = (e) => {
@@ -49,10 +55,7 @@ const ServiceCards = props => {
             <div className="u-flex u-flexJustifyCenter" style={{marginBottom: '20px'}}>
               <div className="service-card-icon-wrapper" style={{width: '100px', height: '100px'}}>
                 <CircleSvg />
-                {card.icon === 'development' && <Development />}
-                {card.icon === 'optimization' && <Optimization />}
-                {card.icon === 'seo' && <Seo />}
-                {card.icon === 'ecommerce' && <Ecommerce />}
+                {iconMap[card.icon]}
               </div>
             </div>
             {card.content}

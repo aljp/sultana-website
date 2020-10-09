@@ -4,7 +4,7 @@ import "materialize-css/dist/css/materialize.css"
 import "styling/home.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import GenericHeader from "../components/GenericHeader"
+import GenericHeader from "../components/generic-header/GenericHeader"
 
 const AboutPage = () => (
   <Layout>
