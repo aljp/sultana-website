@@ -1,0 +1,133 @@
+$corner-size: 36px;
+
+.card {
+  box-shadow: none !important;
+}
+
+.services-header {
+  text-align: center;
+}
+.service-cards {
+  position: relative;
+  width: 80vw;
+  margin: 40px auto 0 auto;
+  z-index: 999;
+
+  @media (max-width: 768px) {
+    height: initial;
+  }
+
+  .service-card {
+    flex: 1 0 33%;
+    margin-right: 20px;
+    text-align: center;
+    overflow-y: hidden;
+    position: relative;
+    border-radius: 4px;
+    transition: max-height 0.6s ease, background-color 0.5s ease-out;
+    background-color: $background-primary;
+    min-width: 200px;
+    max-width: 300px;
+    height: auto;
+    max-height: 250px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @mixin active-card {
+      background-color: white;
+      max-height: 500px;
+
+      .card-body {
+        display: block;
+        max-height: 400px;
+      }
+
+      &:before {
+        height: $corner-size;
+        width: $corner-size;
+        box-shadow: 2px 2px 8px $shadow-color;
+      }
+
+      &:after {
+        border-top-width: $corner-size;
+        border-left-width: $corner-size;
+        border-left-color: white;
+      }
+      .service-card-icon-wrapper {
+        background-color: $sultana-primary;
+
+        svg {
+          fill: white;
+        }
+      }
+
+      .progress-ring {
+        stroke-dasharray: 400 0 400;
+      }
+    }
+
+    &:hover {
+      @include active-card;
+    }
+
+    &.active {
+      @include active-card;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 0;
+      width: 0;
+      box-shadow: 0px 0px 0px $shadow-color;
+      transition: all 0.6s;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: 0;
+      right: 0;
+      border-top-width: 0px;
+      border-top-color: $background-primary;
+      border-top-style: solid;
+      border-left-width: 0px;
+      border-left-style: solid;
+      border-left-color: $background-primary;
+      transition: border-width 0.6s, border-color 0.3s;
+    }
+
+    .card-body {
+      height: auto;
+      max-height: 0;
+      margin-top: 40px;
+      transition: max-height 0.6s;
+    }
+    &-icon-wrapper {
+      position: relative;
+      background: white;
+      padding: 20px;
+      border-radius: 50%;
+      transition: all 0.5s;
+
+      svg {
+        transition: all 0.5s;
+      }
+    }
+
+    .progress-ring {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      stroke: $sultana-primary;
+      stroke-dasharray: 0 400 0;
+      transition: stroke-dasharray 0.5s;
+    }
+  }
+}

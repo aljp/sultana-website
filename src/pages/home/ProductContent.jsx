@@ -23,7 +23,7 @@ const ProductContent = (props) => {
   `)
 
   return (
-    <ImageTextPanel 
+    <ImageTextPanel
       imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
       contentPanel={(
         <section className="ProductContent">
