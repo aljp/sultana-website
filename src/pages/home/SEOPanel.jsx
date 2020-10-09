@@ -23,7 +23,8 @@ const SEOPanel = (props) => {
 `)
 
 return (
-  <ImageTextPanel 
+  <ImageTextPanel
+    reverse={true}
     imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
     contentPanel={(
       <section className="ProductContent">

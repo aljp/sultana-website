@@ -5,22 +5,28 @@
   },
   "serviceCards": [
     {
-      "name": "Ecommerce",
-      "content": "Build an ecommerce site for your business or product",
-      "body": "Having a beautiful and fast ecommerce site is a must have.",
+      "name": "Web Development",
+      "content": "Innovative application development in a range of technologies",
+      "body": "Be confident your application is built efficient and secure, from prototyping to deployment, using the latest and greatest in technology",
       "icon": "development"
     },
     {
       "name": "Optimisation",
-      "content": "Take your load speeds into orbit with our optimisation package",
-      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "content": "Spruce up your website to ensure the perfect experience for both humans and web crawlers",
+      "body": "Poor performance can affect your ranking on google and conversion rate. Our optimisation packages identify and solve performance issues hurting your bottom line",
       "icon": "optimization"
     },
     {
-      "name": "SEO",
+      "name": "Search Engine Optimisation",
       "content": "SEO tooling, integration and assistance to maximise your reach",
-      "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "body": "All aspects of technical SEO as well as assistance in integrating SEO into your marketing campaign",
       "icon": "seo"
+    },
+    {
+      "name": "E-commerce",
+      "content": "Beautiful and effective ecommerce pages to ensure maximum conversion",
+      "body": "Shopify experts",
+      "icon": "ecommerce"
     }
   ]
 }

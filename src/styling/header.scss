@@ -32,8 +32,6 @@
       a {
         color: $sultana-tertiary;
         font-weight: 900;
-    
-        
       }
     }
   }
@@ -62,18 +60,21 @@
     button {
       display: block;
     }
+
     .nav-links {
       background-color: $sultana-primary;
       flex-direction: column;
       position: absolute;
-      right: -900px;
-      bottom: -194px;
-      transition: right 0.6s;
+      right: 0;
+      height: 0;
+      top: 44px;
+      transition: height 0.3s;
       z-index: 1;
+      overflow: hidden;
 
       &.open {
         display: flex;
-        right: 0;
+        height: 180px;
       }
 
       li {
@@ -91,14 +92,14 @@
     svg {
       width: 20px;
       .menu_svg__bottom {
-        transition: all 0.6s;
+        transition: all 0.3s;
       }
       .menu_svg__top {
-        transition: all 0.6s;
+        transition: all 0.3s;
       }
       .menu_svg__middle {
         opacity: 1;
-        transition: all 0.6s;
+        transition: all 0.3s ease-out;
       }
     }
     
