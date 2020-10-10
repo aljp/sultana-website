@@ -12,12 +12,8 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <LandingHeader />
-    <div style={{paddingTop: '10vw', paddingBottom: '10vw'}}>
-      <SEOPanel />
-    </div>
-    <div className="ProductContent-wrapper">
-      <ProductContent />
-    </div>
+    <SEOPanel />
+    <ProductContent />
     <ServiceCards />
   </Layout>
 )
