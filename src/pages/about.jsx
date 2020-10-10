@@ -11,13 +11,12 @@ const AboutPage = () => (
     <SEO title="About Us" />
     <GenericHeader
       preTitle="About Us"
-      title="A web design &amp; development firm based in Sydney"
+      title="Web design and development firm based in Sydney"
     />
     <div className="about-container container">
       <div className="row">
-        <div className="col s12 m8 offset-m2">
+        <div className="col s12 m8 no-padding">
           <div className="about-content">
-            <p>A little bit about us...</p>
             <p>
               We're a team of two Sydney based web developers who have been
               working in the industry for over 10 years. With our years of

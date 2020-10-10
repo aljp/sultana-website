@@ -11,11 +11,11 @@ const ServicesPage = () => (
     <SEO title="Services" />
     <GenericHeader
       preTitle="Services"
-      title="A web design &amp; development firm based in Sydney"
+      title="How we'll help build your website"
     />
     <div className="container">
       <div className="row">
-        <div className="col s12 m8 offset-m2">
+        <div className="col s12 m8 no-padding">
           <div className="services-content">
             <h4>Development</h4>
             <span style={{ fontSize: "1rem" }}>How can we help?</span>

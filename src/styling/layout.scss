@@ -21,7 +21,11 @@ body {
     min-height: 100vh;
 
     main {
-      padding-bottom: 237px;
+      padding-bottom: 256px;
+
+      @media (min-width: 991px) {
+        padding-bottom: 237px;
+      }
     }
 
     .page-footer {
@@ -36,4 +40,6 @@ body {
   }
 }
 
-
+.row .col.no-padding {
+  padding: 0;
+}

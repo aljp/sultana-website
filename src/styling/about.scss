@@ -1,7 +1,12 @@
 @import 'colors.scss';
+@import 'variables.scss';
 
 .about-container {
   .about-content {
+    h3 {
+      text-align:center;
+      font-size:x-large;
+    }
     &.no-margin {
       margin: 0;
       width:100%;
