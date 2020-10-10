@@ -23,19 +23,21 @@ const SEOPanel = (props) => {
 `)
 
 return (
-  <ImageTextPanel
-    reverse={true}
-    imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
-    contentPanel={(
-      <section className="ProductContent">
-        <h2>Quality products</h2>
-        <p>
-          {data.homeJson.services.seo}
-        </p>
-        <Button>See our product services</Button>
-      </section>
-    )}
-  />
+  <div className="container no-margin panel-wrapper">
+    <ImageTextPanel
+      reverse={true}
+      imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
+      contentPanel={(
+        <section className="ProductContent">
+          <h2>Quality products</h2>
+          <p>
+            {data.homeJson.services.seo}
+          </p>
+          <Button>See our product services</Button>
+        </section>
+      )}
+    />
+  </div>
 )
 };
 

@@ -23,18 +23,20 @@ const ProductContent = (props) => {
   `)
 
   return (
-    <ImageTextPanel
-      imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
-      contentPanel={(
-        <section className="ProductContent">
-          <h2>Quality products</h2>
-          <p>
-            {data.homeJson.services.content}
-          </p>
-          <Button>See our product services</Button>
-        </section>
-      )}
-    />
+    <div className="container no-margin panel-wrapper ProductContent-wrapper">
+      <ImageTextPanel
+        imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
+        contentPanel={(
+          <section className="ProductContent">
+            <h2>Who we are</h2>
+            <p>
+              {data.homeJson.services.content}
+            </p>
+            <Button>See our product services</Button>
+          </section>
+        )}
+      />
+    </div>
   )
 };
 

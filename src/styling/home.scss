@@ -1,10 +1,16 @@
 @import "colors.scss";
 @import 'home/service-cards.scss';
+@import 'home/hero.scss';
 
+.panel-wrapper {
+  padding: 60px 0 60px 0;
+
+  @media (min-width: 991px) {
+    padding: 80px 0 80px 0;
+  }
+}
 
 .ProductContent-wrapper {
-  margin-top: 20px;
-  padding: 80px 0 80px 0;
   background-image: $background-gradient;
 
   .ProductContent {
@@ -16,7 +22,17 @@
   }
 }
 
-.imageColumn {
+.row {
+  margin-bottom: 0; 
+}
+
+.container.no-margin {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.image-column.col {
   width: 92vw;
   padding-left: 0 !important;
   > div {
@@ -24,48 +40,13 @@
   }
 }
 
-.hero {
-  z-index: -1;
-  &-wrapper {
-    position: relative;
-    overflow-y: hidden;
-  }
+.content-column.col {
+  padding-bottom: 20px;
 
-  &-content {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-
-    @media (min-width: 801px) {
-      position: absolute;
-      top: 10vw;
-      left: 10%;
-      font-size: 36px;
-      text-align: left;
-      width: auto;
-    }
-  }
-
-  &-title {
-    mix-blend-mode: difference;
-    color: gray;
-    font-size: 36px;
-    font-weight: 900;
-
-    @media (min-width: 768px) {
-      font-size: 56px;
-    }
-  }
-
-  img {
-    z-index: 998;
-    mix-blend-mode: multiply;
-    width: 50vw;
-    position: absolute;
-    display: none;
-
-    @media (min-width: 801px) {
-      display:block;
-    }
+  @media (min-width: 991px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
