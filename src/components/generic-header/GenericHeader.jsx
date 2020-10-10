@@ -1,19 +1,18 @@
-import React from 'react';
+import React from "react"
 
-import './GenericHeader.scss';
+import "./GenericHeader.scss"
 
-const GenericHeader = () => {
+const GenericHeader = props => {
   return (
     <div className="generic-header">
-      <div className="generic-header-container">
+      <div className="generic-header-container container">
         <div className="header-text">
-          <h2>About Us</h2>
-          <h3>A web design &amp; development firm based in Sydney</h3>
+          <h1>{props.preTitle}</h1>
+          <h2>{props.title}</h2>
         </div>
       </div>
-      
     </div>
   )
-};
+}
 
-export default GenericHeader;
+export default GenericHeader

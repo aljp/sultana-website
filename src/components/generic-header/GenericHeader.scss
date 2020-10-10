@@ -5,36 +5,29 @@
   background-color: rgba($sultana-primary, 0.92);
   color: $background-primary;
   min-height: 100px;
-  
-  padding: 50px 0 50px 0;
 
-  @media (min-width:801px) {
-    padding: 50px 100px 50px 100px;
-  }
-
-  .generic-header-container {
-    width: 90%;
-    margin: 0 auto;
+  .container {
+    padding: 50px 0 50px 0;
   }
   
   .header-text {
     
-    h2 {
+    h1 {
       margin:0;
       font-size: 14px;
+      
     }
 
-    h3 {
+    h2 {
       margin: 0;
       color: white;
+      font-size: 1.92rem;
     }
 
 
-    @media (min-width: 801px) {
-      margin-left:100px;
-      max-width: 80%;
+    @media (min-width: 991px) {
 
-      h3 {
+      h2 {
         font-size: 1.92rem;
       }
     }

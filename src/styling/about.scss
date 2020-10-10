@@ -1,6 +1,14 @@
 @import 'colors.scss';
 
-.about-content {
-  width: 90%;
-  margin: 0 auto;
+.about-container {
+  .about-content {
+    &.no-margin {
+      margin: 0;
+      width:100%;
+    }
+
+    img {
+      width:100%;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import { Row, Col } from "react-materialize"
 import "materialize-css/dist/css/materialize.css"
-import "styling/home.scss"
+import "styling/about.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import GenericHeader from "../components/generic-header/GenericHeader"
@@ -9,30 +9,33 @@ import GenericHeader from "../components/generic-header/GenericHeader"
 const AboutPage = () => (
   <Layout>
     <SEO title="About Us" />
-    <GenericHeader />
-    <div className="about-content">
-      <p>A little bit about us...</p>
-      <p>
-        We're a team of two Sydney based web developers who have been working in
-        the industry for over 10 years. With our years of experience behind us
-        we decided to take the leap and start Sultana Digital.
-      </p>
-      <p>THIS NEEDS MORE CONTENT, IMAGES, ETC.? OUR FACES?</p>
-      <h3 style={{ textAlign: "center" }}>How we deliver</h3>
-      <Row>
-        <Col m={3}>
-          <span>We Deliver Quality!</span>
-        </Col>
-        <Col m={3}>
-          <span>We Deliver Quality!</span>
-        </Col>
-        <Col m={3}>
-          <span>We Deliver Quality!</span>
-        </Col>
-        <Col m={3}>
-        <span>We Deliver Quality!</span>
-        </Col>
-      </Row>
+    <GenericHeader
+      preTitle="About Us"
+      title="A web design &amp; development firm based in Sydney"
+    />
+    <div className="about-container container">
+      <div className="row">
+        <div className="col s12 m8 offset-m2">
+          <div className="about-content">
+            <p>A little bit about us...</p>
+            <p>
+              We're a team of two Sydney based web developers who have been
+              working in the industry for over 10 years. With our years of
+              experience behind us we decided to take the leap and start Sultana
+              Digital.
+            </p>
+            <p>
+              We specialise in helping business and individuals realise their
+              dream website, whether it's a new website for your restaurant to
+              take bookings, or a boutique high end web store. We'll work with
+              you to make it happen.
+            </p>
+          </div>
+          <div className="about-content no-margin">
+            <img src="http://lorempixel.com/400/200/sports/" />
+          </div>
+        </div>
+      </div>
     </div>
   </Layout>
 )
