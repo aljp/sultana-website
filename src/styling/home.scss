@@ -16,12 +16,16 @@
   }
 }
 
-.imageColumn {
+.image-column.col {
   width: 92vw;
   padding-left: 0 !important;
   > div {
     height: 500px;
   }
+}
+
+.content-column.col {
+  padding: 20px;
 }
 
 .hero {
