@@ -5,8 +5,8 @@ const ServiceSection = (props) => {
 
   return (
     <>
-    <h4>{title}</h4>
-    {content.map((paragraph) => <p>{paragraph}</p>)}
+    <h2>{title}</h2>
+    {content.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
     </>
   )
 };

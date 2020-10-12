@@ -1,15 +1,15 @@
 import React from 'react';
 import { Button } from 'react-materialize';
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from 'gatsby-image'
 import ImageTextPanel from 'components/ImageTextPanel'
 
-const SEOPanel = (props) => {
+const WhoWeArePanel = (props) => {
   const data = useStaticQuery(graphql`
   query {
     homeJson {
       panelContent {
-        seo
+        whoWeAre
       }
     }
     placeholderImage: file(relativePath: { eq: "diggity-marketing-s8HyIEe7lF0-unsplash.jpg" }) {
@@ -28,12 +28,14 @@ return (
       reverse={true}
       imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
       contentPanel={(
-        <section className="ProductContent">
-          <h2>Quality products</h2>
+        <section className="WhatWeDoPanel">
+          <h2>Who we are</h2>
           <p>
-            {data.homeJson.panelContent.seo}
+            {data.homeJson.panelContent.whoWeAre}
           </p>
-          <Button>See our product services</Button>
+          <Button>
+            <Link to="/about">Read more</Link>
+          </Button>
         </section>
       )}
     />
@@ -41,4 +43,4 @@ return (
 )
 };
 
-export default SEOPanel;
+export default WhoWeArePanel;

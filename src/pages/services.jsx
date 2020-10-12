@@ -43,7 +43,7 @@ const ServicesPage = () => {
         <div className="row">
           <div className="col s12 m8 no-padding">
             <div className="services-content">
-              {content.map((service) => <ServiceSection title={service.title} content={service.content} />)}
+              {content.map((service) => <ServiceSection title={service.title} content={service.content} key={service.title} />)}
             </div>
           </div>
         </div>

@@ -25,12 +25,7 @@ const ContactForm = () => {
     if (loading || sent) return
 
     setLoading(true)
-    // let res = await axios.post(`${API_HOST}/contact`, {
-    //   name,
-    //   email,
-    //   subject,
-    //   description,
-    // })
+
     let res = await axios({
       method: "POST",
       url: `${API_HOST}/contact`,

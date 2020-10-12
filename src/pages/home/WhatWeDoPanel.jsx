@@ -1,15 +1,15 @@
 import React from 'react';
 import { Button } from 'react-materialize';
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from 'gatsby-image'
 import ImageTextPanel from 'components/ImageTextPanel'
 
-const ProductContent = (props) => {
+const WhatWeDoPanel = (props) => {
   const data = useStaticQuery(graphql`
     query {
       homeJson {
         panelContent {
-          content
+          whatWeDo
         }
       }
       placeholderImage: file(relativePath: { eq: "luca-bravo-XJXWbfSo2f0-unsplash.jpg" }) {
@@ -23,16 +23,17 @@ const ProductContent = (props) => {
   `)
 
   return (
-    <div className="container no-margin panel-wrapper ProductContent-wrapper">
+    <div className="container no-margin panel-wrapper WhatWeDoPanel-wrapper">
       <ImageTextPanel
         imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
         contentPanel={(
-          <section className="ProductContent">
+          <section className="WhatWeDoPanel">
             <h2>Who we are</h2>
             <p>
-              {data.homeJson.panelContent.content}
+              {data.homeJson.panelContent.whatWeDo}
             </p>
-            <Button>See our product services</Button>
+            <Button>
+            <Link to="/services">Read more</Link></Button>
           </section>
         )}
       />
@@ -40,4 +41,4 @@ const ProductContent = (props) => {
   )
 };
 
-export default ProductContent;
+export default WhatWeDoPanel;

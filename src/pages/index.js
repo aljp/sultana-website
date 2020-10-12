@@ -4,16 +4,16 @@ import 'styling/home.scss'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingHeader from "./home/LandingHeader"
-import ProductContent from "pages/home/ProductContent"
+import WhatWeDoPanel from "pages/home/WhatWeDoPanel"
 import ServiceCards from "pages/home/ServicesCards";
-import SEOPanel from "pages/home/SEOPanel";
+import WhoWeArePanel from "pages/home/WhoWeArePanel";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <LandingHeader />
-    <SEOPanel />
-    <ProductContent />
+    <WhoWeArePanel />
+    <WhatWeDoPanel />
     <ServiceCards />
   </Layout>
 )

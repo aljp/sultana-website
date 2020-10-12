@@ -1,7 +1,7 @@
 {
   "panelContent": {
-    "content": "Delivering high quality technical solutions is what drives us and with over 10 years experience in the industry, we have the expertise to back it up. We have experience across a wide range of platforms and technologies mean that no matter the problem, we’ll have the solution. Your success is our goal.",
-    "seo": "We service all aspects of technical SEO and tooling as well as full-scale integration of SEO into your marketing strategy"
+    "whoWeAre": "Sultana Digital is a new Sydney based digital agency started by two high-school mates with a passion for technology. After working in the industry for 10 years, we were dissatisfied with the quality of work being produced by many existing agencies and they take advantage of their customers. We decided to take the plunge and start a business with a focus on quality, honesty and no-nonsense. Our mission is to ensure our partners achieve their goals with full confidence that their technology is top quality and can be relied upon to deliver business needs",
+    "whatWeDo": "We service all aspects of the web specialising in application development and e-commerce. We also service technical search engine optimisation and consultancy."
   },
   "serviceCards": [
     {
@@ -43,7 +43,8 @@
         "title": "Development",
         "content": [
           "How can we help?",
-          "When you have an idea for a website you'll want to work with dedicated individuals to bring it to life. We have experience working with others to build websites that are beautiful, fast, and effective."
+          "When you have an idea for a website you'll want to work with dedicated individuals to bring it to life. We have experience working with others to build websites that are beautiful, fast, and effective.",
+          "We have experience in a range of technologies"
         ]
       },
       {
@@ -57,7 +58,8 @@
         "title": "Page Optimisation",
         "content": [
           "Why does it matter?",
-          "Having a fast and responsive website translates into an improved user experience and increased sales. We can help make your website load as fast as possible so your users spend more of their time browsing your website."
+          "Having a fast and responsive website translates into an improved user experience and increased sales. Conversely having a slow page can seriously affect your google search ranking, whether users visit your site, how long they stay, how many pages they view and conversions rates.", 
+          "As part of this service we will audit your webpage and identify key areas for improvement and act upon them. More often than not this can be improved with a few simple tweaks in the right areas. Whether you like it or not, your slow website is losing you customers, but don't worry, Sultana is here to help."
         ]
       }
     ]

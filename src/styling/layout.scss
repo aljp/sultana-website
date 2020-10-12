@@ -4,6 +4,7 @@
 @import 'contact.scss';
 @import 'footer.scss';
 @import 'about.scss';
+@import 'services.scss';
 
 html {
   height: 100%;
@@ -36,7 +37,14 @@ body {
   }
 
   .btn {
-    background-color: $sultana-secondary
+    background-color: $sultana-secondary;
+    a {
+      color: white;
+    }
+
+    &:hover {
+      background-color: $sultana-primary
+    }
   }
 }
 

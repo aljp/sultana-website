@@ -3,7 +3,7 @@
   "private": true,
   "description": "Marketing page for sultana digital",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Daniel Teale and Adam Jacquier-Parr <info@sultanadigital.com>",
   "dependencies": {
     "@svgr/webpack": "^5.4.0",
     "axios": "^0.20.0",
