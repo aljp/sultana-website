@@ -28,25 +28,6 @@ const ServiceCards = props => {
   }
 
   const handleOnClick = e => e.currentTarget.classList.toggle("active")
-  const handleMouseOver = e => {
-    const target = e.currentTarget
-    const cardBody = target.querySelector(".card-body")
-
-    cardBody.style.display = "block"
-    target.style.height = `${
-      target.clientHeight + cardBody.clientHeight + 40
-    }px`
-  }
-
-  const handleMouseOut = e => {
-    const target = e.currentTarget
-    const cardBody = target.querySelector(".card-body")
-
-    target.style.height = `${
-      target.clientHeight - cardBody.clientHeight - 40
-    }px`
-    cardBody.style.display = "none"
-  }
 
   return (
     <Row>

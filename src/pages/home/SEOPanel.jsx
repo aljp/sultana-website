@@ -8,7 +8,7 @@ const SEOPanel = (props) => {
   const data = useStaticQuery(graphql`
   query {
     homeJson {
-      services {
+      panelContent {
         seo
       }
     }
@@ -31,7 +31,7 @@ return (
         <section className="ProductContent">
           <h2>Quality products</h2>
           <p>
-            {data.homeJson.services.seo}
+            {data.homeJson.panelContent.seo}
           </p>
           <Button>See our product services</Button>
         </section>

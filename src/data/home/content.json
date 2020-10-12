@@ -1,5 +1,5 @@
 {
-  "services": {
+  "panelContent": {
     "content": "Delivering high quality technical solutions is what drives us and with over 10 years experience in the industry, we have the expertise to back it up. We have experience across a wide range of platforms and technologies mean that no matter the problem, we’ll have the solution. Your success is our goal.",
     "seo": "We service all aspects of technical SEO and tooling as well as full-scale integration of SEO into your marketing strategy"
   },
@@ -28,5 +28,38 @@
       "body": "Shopify experts",
       "icon": "ecommerce"
     }
-  ]
+  ],
+  "aboutUs": {
+    "title": "Web design and development firm based in Sydney",
+    "content": [
+      "We're a team of two Sydney based web developers who have been working in the industry for over 10 years. With our years of experience behind us we decided to take the leap and start Sultana Digital.",
+      "We specialise in helping business and individuals realise their dream website, whether it's a new website for your restaurant to take bookings, or a boutique high end web store. We'll work with you to make it happen"
+    ]
+  },
+  "services" : {
+    "title": "How we can help you",
+    "content": [
+      {
+        "title": "Development",
+        "content": [
+          "How can we help?",
+          "When you have an idea for a website you'll want to work with dedicated individuals to bring it to life. We have experience working with others to build websites that are beautiful, fast, and effective."
+        ]
+      },
+      {
+        "title": "Search Engine Optimisation (SEO)",
+        "content": [
+          "What does that mean?",
+          "Search engine optimisation is important for your website to be relevant and easy to find. We understand how to analyse your business, website, or idea, and discover a great keyword strategy to make your website more relevant and search friendly."
+        ]
+      },
+      {
+        "title": "Page Optimisation",
+        "content": [
+          "Why does it matter?",
+          "Having a fast and responsive website translates into an improved user experience and increased sales. We can help make your website load as fast as possible so your users spend more of their time browsing your website."
+        ]
+      }
+    ]
+  }
 }

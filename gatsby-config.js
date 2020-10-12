@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Sultana Digital`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Sydney based digital agency specialising in application development and e-commerce`,
+    author: `Sultana Digital`,
   },
   plugins: [
     {
