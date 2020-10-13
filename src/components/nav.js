@@ -24,7 +24,7 @@ const Nav = ({ siteTitle }) => {
           <img src={logo} style={{width: '160px'}} alt="Sultana Digital Logo"/>
         </Link>
       </div>
-      <button onClick={handleOnClick} ref={menuButtonRef}><Menu /></button>
+      <button onClick={handleOnClick} ref={menuButtonRef} aria-label="Main menu"><Menu /></button>
       <ul className="nav-links" ref={menuRef}>
         <li>
           <Link to="/">Home</Link>

@@ -8,7 +8,7 @@ const ImageTextPanel = (props) => {
   const contentClasses = `content-column${reverse ? ' push-l6' : ''}`
 
   return (
-    <Row style={{ maxWidth: '90vw' }}>
+    <Row style={{ maxWidth: '90vw' }} className={className}>
       <div >
         <Col l={5} className={contentClasses}>
           {contentPanel}
