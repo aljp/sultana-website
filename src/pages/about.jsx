@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image'
-import { Row, Col } from "react-materialize"
 import "materialize-css/dist/css/materialize.css"
 import "styling/about.scss"
 import Layout from "../components/layout"

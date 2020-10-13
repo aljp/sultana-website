@@ -21,7 +21,7 @@ const Nav = ({ siteTitle }) => {
         className="logo-wrapper"
       >
         <Link to="/">
-          <img src={logo} style={{width: '160px'}}/>
+          <img src={logo} style={{width: '160px'}} alt="Sultana Digital Logo"/>
         </Link>
       </div>
       <button onClick={handleOnClick} ref={menuButtonRef}><Menu /></button>

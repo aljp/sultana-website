@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Row, Card } from "react-materialize"
+import { Row } from "react-materialize"
 import CircleSvg from "components/CircleSvg"
 import { ReactComponent as Development } from "images/serviceCards/004-programming-1.svg"
 import { ReactComponent as Optimization } from "images/serviceCards/002-computer.svg"
@@ -40,6 +40,9 @@ const ServiceCards = props => {
             key={card.name}
             className="service-card-wrapper"
             onClick={handleOnClick}
+            onKeyPress={handleOnClick}
+            role="link"
+            tabIndex={0}
           >
             <div className="service-card">
               <div

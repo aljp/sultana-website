@@ -10,8 +10,8 @@ const LandingHeader = props => (
       <video autoPlay muted loop width="100%" className="hero-video">
         <source src={video} type="video/mp4" />
       </video>
-      <img src={fallback} className="hero-video-fallback" />
-      <img src={logo} className="logo" />
+      <img src={fallback} className="hero-video-fallback" alt="Waves crashing over a rock"/>
+      <img src={logo} className="logo" alt="A company logo that looks like a bunch of grapes"/>
       <div className="hero-content">
         <div className="hero-title">
           Have digital problems? 

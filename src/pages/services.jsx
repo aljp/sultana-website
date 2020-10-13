@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from 'gatsby';
-import { Row, Col } from "react-materialize"
 import "materialize-css/dist/css/materialize.css"
 import "styling/home.scss"
 import Layout from "components/layout"
@@ -13,11 +12,11 @@ const ServicesPage = () => {
     query {
       homeJson {
         services {
+          title
           content {
             content
             title
           }
-          title
         }
       }
       aboutUsImage: file(relativePath: { eq: "about-us-placeholder.jpg" }) {
@@ -43,7 +42,9 @@ const ServicesPage = () => {
         <div className="row">
           <div className="col s12 m8 no-padding">
             <div className="services-content">
-              {content.map((service) => <ServiceSection title={service.title} content={service.content} key={service.title} />)}
+              {content.map((service) => {
+                return <ServiceSection title={service.title} content={service.content} key={service.title} />
+              })}
             </div>
           </div>
         </div>
