@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'components/Image'
+import Image from 'components/image';
 import { Row, Col, Card, Button } from 'react-materialize';
 
 export default function CardPanel(props) {
