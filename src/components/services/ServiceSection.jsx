@@ -6,7 +6,7 @@ const ServiceSection = (props) => {
   return (
     <>
     <h2>{title}</h2>
-    {content.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+    {content.map((paragraph) => <p>{paragraph}</p>)}
     </>
   )
 };

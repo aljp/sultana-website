@@ -5,7 +5,7 @@ import "styling/home.scss"
 import Layout from "components/layout"
 import SEO from "components/seo"
 import GenericHeader from "components/generic-header/GenericHeader"
-import ServiceSection from 'pages/services/ServiceSection'
+import ServiceSection from 'components/services/ServiceSection'
 
 const ServicesPage = () => {
   const data = useStaticQuery(graphql`
@@ -30,7 +30,6 @@ const ServicesPage = () => {
   `)
   
   const { title, content } = data.homeJson.services
-
   return(
     <Layout>
       <SEO title="Services" />
@@ -43,7 +42,9 @@ const ServicesPage = () => {
           <div className="col s12 m8 no-padding">
             <div className="services-content">
               {content.map((service) => {
-                return <ServiceSection title={service.title} content={service.content} key={service.title} />
+                console.log('service')
+                console.log(service)
+                return <ServiceSection title={service.title} content={service.content}/>
               })}
             </div>
           </div>
