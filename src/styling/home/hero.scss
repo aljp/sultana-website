@@ -7,6 +7,10 @@
   &-wrapper {
     position: relative;
     overflow-y: hidden;
+
+    @media (min-width: 991px) {
+      height: 80vh
+    }
   }
 
   &-video {

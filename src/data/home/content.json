@@ -1,7 +1,7 @@
 {
   "panelContent": {
     "whoWeAre": "Sultana Digital is a new Sydney based digital agency started by two longtime friends with a passion for technology. After working in the industry for 10 years, we were dissatisfied with the quality of work being produced by many existing agencies and they take advantage of their customers. We decided to take the plunge and start a business with a focus on quality, honesty and no-nonsense.",
-    "whatWeDo": "We service all aspects the web development, with a focus on applications and e-commerce. From performance and optimisation improvements to fully fledged custom applications, we leverage our experience across a range of technologies to deliver your business needs."
+    "whatWeDo": "We service all aspects the web development, with a focus on applications and e-commerce. From performance and optimisation improvements to fully fledged custom applications, we leverage our experience across a range of technologies to deliver to your needs."
   },
   "serviceCards": [
     {
@@ -25,7 +25,7 @@
     {
       "name": "E-commerce",
       "content": "Beautiful and effective ecommerce pages to ensure maximum conversion",
-      "body": "Powerful e-commerce sites that drive business and revenue, available on a number of platforms",
+      "body": "Powerful e-commerce sites that drive business and revenue, support available for Shopify, Woocommerce and more",
       "icon": "ecommerce"
     }
   ],
@@ -43,8 +43,9 @@
         "title": "Development",
         "content": [
           "How can we help?",
-          "When you have an idea for a website you'll want to work with dedicated individuals to bring it to life. We have experience working with others to build websites that are beautiful, fast, and effective.",
-          "We have experience in a range of technologies"
+          "When you have an idea for a website you'll want to work with dedicated individuals to bring it to life. We have experience working with others to build websites and applications that are beautiful, fast, and effective.",
+          "We have experience in a range of back-end and front-end technologies including: React, Angular, Ruby on Rails, Django, Node and more.",
+          "We also support Amazon Web Services and offer hosting solutions"
         ]
       },
       {
