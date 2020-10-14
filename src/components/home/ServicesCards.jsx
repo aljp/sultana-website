@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Row } from "react-materialize"
 import CircleSvg from "components/CircleSvg"
 import { ReactComponent as Development } from "images/serviceCards/004-programming-1.svg"
 import { ReactComponent as Optimization } from "images/serviceCards/002-computer.svg"
@@ -30,7 +29,7 @@ const ServiceCards = props => {
   const handleOnClick = e => e.currentTarget.classList.toggle("active")
 
   return (
-    <Row>
+    <div className="row">
       <div className="services-header">
         <h2>Services we offer</h2>
       </div>
@@ -65,7 +64,7 @@ const ServiceCards = props => {
           </div>
         ))}
       </div>
-    </Row>
+    </div>
   )
 }
 

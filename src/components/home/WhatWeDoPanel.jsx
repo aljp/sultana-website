@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-materialize';
+import Button from 'components/form-helpers/Button'
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from 'gatsby-image'
 import ImageTextPanel from 'components/ImageTextPanel'
@@ -33,7 +33,8 @@ const WhatWeDoPanel = (props) => {
               {data.homeJson.panelContent.whatWeDo}
             </p>
             <Button>
-            <Link to="/services">Read more</Link></Button>
+              <Link to="/services">Read more</Link>
+            </Button>
           </section>
         )}
       />

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'gatsby';
-import { Footer } from "react-materialize";
+import Footer from 'components/generic-components/Footer';
 
 // TODO: Implement footer
 // TODO: Implement social media links
@@ -26,9 +26,6 @@ const SultanaFooter = props => (
     }
   >
     <h5 className="white-text">Sultana Digital</h5>
-    <p className="grey-text text-lighten-4">
-      
-    </p>
   </Footer>
 )
 

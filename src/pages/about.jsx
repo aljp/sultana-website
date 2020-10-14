@@ -18,14 +18,14 @@ const AboutPage = () => {
       }
       adamImage: file(relativePath: { eq: "adam_portrait.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       danielImage: file(relativePath: { eq: "daniel.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -46,7 +46,7 @@ const AboutPage = () => {
         <div className="row">
           <div className="col s12 m8 no-padding">
             <div className="about-content">
-              {content.map((paragraph) => <p>{paragraph}</p>)}
+              {content.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
             <div className="about-content no-margin u-flex u-flexWrap u-flexAlignItemsCenter" style={{paddingTop: '40px'}}>
             <div>
