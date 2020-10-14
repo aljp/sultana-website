@@ -14,7 +14,6 @@ import Img from "gatsby-image"
  */
 
 const Image = (props) => {
-  const { path } = props;
 
   const data = useStaticQuery(graphql`
     query {
