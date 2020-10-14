@@ -30,6 +30,7 @@ const ServicesPage = () => {
   `)
   
   const { title, content } = data.homeJson.services
+  
   return(
     <Layout>
       <SEO title="Services" />
@@ -42,9 +43,7 @@ const ServicesPage = () => {
           <div className="col s12 m8 no-padding">
             <div className="services-content">
               {content.map((service) => {
-                console.log('service')
-                console.log(service)
-                return <ServiceSection title={service.title} content={service.content}/>
+                return <ServiceSection title={service.title} content={service.content} key={service.title} />
               })}
             </div>
           </div>

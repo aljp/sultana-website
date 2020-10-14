@@ -1,7 +1,7 @@
 {
   "panelContent": {
-    "whoWeAre": "Sultana Digital is a new Sydney based digital agency started by two high-school mates with a passion for technology. After working in the industry for 10 years, we were dissatisfied with the quality of work being produced by many existing agencies and they take advantage of their customers. We decided to take the plunge and start a business with a focus on quality, honesty and no-nonsense. Our mission is to ensure our partners achieve their goals with full confidence that their technology is top quality and can be relied upon to deliver business needs",
-    "whatWeDo": "We service all aspects of the web specialising in application development and e-commerce. We also service technical search engine optimisation and consultancy."
+    "whoWeAre": "Sultana Digital is a new Sydney based digital agency started by two longtime friends with a passion for technology. After working in the industry for 10 years, we were dissatisfied with the quality of work being produced by many existing agencies and they take advantage of their customers. We decided to take the plunge and start a business with a focus on quality, honesty and no-nonsense. Our mission is to ensure our partners achieve their goals with full confidence that their technology is top quality and can be relied upon to deliver business needs",
+    "whatWeDo": "We service all aspects the web development, with a focus on applications and e-commerce. From performance and optimisation improvements to fully fledged custom applications, we leverage our experience across a range of technologies to deliver your business needs."
   },
   "serviceCards": [
     {
@@ -25,7 +25,7 @@
     {
       "name": "E-commerce",
       "content": "Beautiful and effective ecommerce pages to ensure maximum conversion",
-      "body": "Shopify experts",
+      "body": "Powerful e-commerce sites that drive business and revenue, available on a number of platforms",
       "icon": "ecommerce"
     }
   ],

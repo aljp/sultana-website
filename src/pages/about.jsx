@@ -16,7 +16,14 @@ const AboutPage = () => {
           title
         }
       }
-      aboutUsImage: file(relativePath: { eq: "about-us-placeholder.jpg" }) {
+      adamImage: file(relativePath: { eq: "adam_portrait.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      danielImage: file(relativePath: { eq: "daniel.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -41,8 +48,15 @@ const AboutPage = () => {
             <div className="about-content">
               {content.map((paragraph) => <p>{paragraph}</p>)}
             </div>
-            <div className="about-content no-margin">
-              <Img fluid={data.aboutUsImage.childImageSharp.fluid} />
+            <div className="about-content no-margin u-flex u-flexWrap u-flexAlignItemsCenter" style={{paddingTop: '40px'}}>
+            <div>
+              <Img fluid={data.danielImage.childImageSharp.fluid} style={{width: '300px', marginRight: '24px'}} />
+              <p><b>Daniel Teale</b></p>
+            </div>
+            <div>
+              <Img fluid={data.adamImage.childImageSharp.fluid} style={{width: '300px'}} />
+              <p><b>Adam Jacquier-Parr</b></p>
+            </div> 
             </div>
           </div>
         </div>
