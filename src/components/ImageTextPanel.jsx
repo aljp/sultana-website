@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ImageTextPanel = (props) => {
-  const { imagePanel, contentPanel, reverse, className } = props;
+  const { imagePanel, contentPanel, reverse } = props;
 
   const imageClasses = `image-column col l6${reverse ? ' pull-l5' : ''}`
   const contentClasses = `content-column col l5${reverse ? ' push-l6' : ''}`

@@ -1,6 +1,8 @@
 import React, { useReducer, useState } from "react"
-import { TextInput, Button, Textarea } from "react-materialize"
 import axios from "axios"
+import TextInput from 'components/form-helpers/TextInput'
+import Textarea from 'components/form-helpers/Textarea'
+import Button from 'components/form-helpers/Button'
 
 const reducer = (state, { field, value }) => ({ ...state, [field]: value })
 
@@ -63,6 +65,7 @@ const ContactForm = () => {
         label="Email"
         value={email}
         onChange={event => handleOnChange("email", event.target.value)}
+        type="email"
       />
       <TextInput
         label="Subject"
@@ -75,7 +78,12 @@ const ContactForm = () => {
         onChange={event => handleOnChange("description", event.target.value)}
       />
       <div>
-        <Button onClick={handleOnClick}>Contact Us</Button>
+        <Button 
+          type="submit"
+          onClick={handleOnClick}
+        >
+          Contact us
+        </Button>
       </div>
     </div>
   )

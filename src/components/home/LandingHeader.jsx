@@ -1,5 +1,5 @@
 import React from "react"
-import { Button } from "react-materialize"
+import Button from "components/form-helpers/Button"
 import fallback from 'images/waves-crashing.png'
 import logo from "images/logos/SULTANA_coloured.svg"
 import video from "images/ocean.mp4"
