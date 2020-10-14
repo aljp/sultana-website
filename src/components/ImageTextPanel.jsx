@@ -1,23 +1,22 @@
 import React from 'react';
-import { Row, Col } from 'react-materialize'
 
 const ImageTextPanel = (props) => {
   const { imagePanel, contentPanel, reverse, className } = props;
 
-  const imageClasses = `image-column${reverse ? ' pull-l5' : ''}`
-  const contentClasses = `content-column${reverse ? ' push-l6' : ''}`
+  const imageClasses = `image-column col l6${reverse ? ' pull-l5' : ''}`
+  const contentClasses = `content-column col l5${reverse ? ' push-l6' : ''}`
 
   return (
-    <Row style={{ maxWidth: '90vw' }}>
+    <div className="row" style={{ maxWidth: '90vw' }}>
       <div >
-        <Col l={5} className={contentClasses}>
+        <div className={contentClasses}>
           {contentPanel}
-        </Col>
-        <Col l={6} className={imageClasses}>
+        </div>
+        <div className={imageClasses}>
           {imagePanel}
-        </Col>
+        </div>
       </div>
-    </Row>
+    </div>
   )
 };
 
