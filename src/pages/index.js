@@ -1,5 +1,4 @@
 import React from "react"
-import 'materialize-css/dist/css/materialize.css';
 import 'styling/home.scss'
 import Layout from "../components/layout"
 import SEO from "../components/seo"

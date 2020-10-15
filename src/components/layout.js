@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./nav";
 import 'styling/layout.scss';
 import SultanaFooter from "components/footer";
+import 'materialize-css';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
