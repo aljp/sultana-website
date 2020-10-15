@@ -2,15 +2,8 @@ import React from 'react';
 
 const Textarea = (props) => {
   const { label, id, value, className, labelClass, inputClass, onChange } = props;
-  let classes = 'input-field'
-  if (className !== undefined) {
-    classes = `${classes} ${className}`
-  }
-
-  let inputClasses = 'materialize-textarea'
-  if (inputClass !== undefined) {
-    inputClasses = `${inputClasses} ${inputClass}`
-  }
+  const classes = `input-field ${className || ''}`
+  const inputClasses = `materialize-textarea ${inputClass || ''}`
   
   return (
     <div className={classes}>
