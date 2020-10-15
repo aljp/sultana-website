@@ -2,7 +2,7 @@ import React from 'react';
 
 const TextInput = (props) => {
   const { label, id, value, className, inputClass, labelClass, onChange, type } = props;
-  const classes = `input-field ${className}`;
+  const classes = `input-field ${className || ''}`;
 
 
   return (
