@@ -2,8 +2,12 @@ import React from 'react';
 
 const TextInput = (props) => {
   const { label, id, value, className, inputClass, labelClass, onChange, type } = props;
-  const classes = `input-field ${className}`
-  
+  let classes = `input-field`
+  if (className !== undefined) {
+    classes = `${classes} ${className}`
+  }
+
+
   return (
     <div className={classes}>
       <input id={id} type={type || "text"} className={inputClass} value={value} onChange={onChange} />
