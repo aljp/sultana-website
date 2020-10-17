@@ -33,7 +33,7 @@ const WhatWeDoPanel = (props) => {
               {data.homeJson.panelContent.whatWeDo}
             </p>
             <Button>
-              <Link to="/services">Read more</Link>
+              <Link to="/services">See our services</Link>
             </Button>
           </section>
         )}
