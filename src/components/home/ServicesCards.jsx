@@ -29,7 +29,7 @@ const ServiceCards = props => {
   const handleOnClick = e => e.currentTarget.classList.toggle("active")
 
   return (
-    <div className="row">
+    <div className="row serviceCardWrapper">
       <div className="services-header">
         <h2>Services we offer</h2>
       </div>

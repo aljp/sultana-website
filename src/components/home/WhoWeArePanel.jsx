@@ -34,7 +34,7 @@ return (
             {data.homeJson.panelContent.whoWeAre}
           </p>
           <Button>
-            <Link to="/about">Read more</Link>
+            <Link to="/about">Read more about us</Link>
           </Button>
         </section>
       )}
