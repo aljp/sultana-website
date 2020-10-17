@@ -3,6 +3,7 @@ module.exports = {
     title: `Sultana Digital`,
     description: `Sydney based digital agency specialising in application development and e-commerce`,
     author: `Sultana Digital`,
+    siteUrl: `https://www.sultanadigital.com/`,
   },
   plugins: [
     {
@@ -35,6 +36,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
     {
