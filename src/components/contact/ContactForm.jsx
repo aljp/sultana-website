@@ -3,6 +3,7 @@ import axios from "axios"
 import TextInput from 'components/form-helpers/TextInput'
 import Textarea from 'components/form-helpers/Textarea'
 import Button from 'components/form-helpers/Button'
+import { API_HOST } from '../../config'
 
 const reducer = (state, { field, value }) => ({ ...state, [field]: value })
 
@@ -22,7 +23,6 @@ const ContactForm = () => {
   }
 
   const handleOnClick = async event => {
-    const API_HOST = "http://localhost:5000"
 
     if (loading || sent) return
 
