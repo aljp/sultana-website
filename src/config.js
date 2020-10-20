@@ -1,1 +1,1 @@
-export const API_HOST = 'https://api.sultanadigital.com';
+export const API_HOST = process.env.API_HOST;

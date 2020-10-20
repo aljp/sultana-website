@@ -35,6 +35,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ["API_HOST"]
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
