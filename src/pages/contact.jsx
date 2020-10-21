@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <Layout>
       <SEO title="Contact" />
-      <div style={{ padding: "16px" }}>
+      <div style={{ padding: "16px", paddingTop: '6vh' }}>
         <div className="row">
           <div className="contactFormWrapper">
             <ContactForm />
