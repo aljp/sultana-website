@@ -23,7 +23,6 @@ const ContactForm = () => {
   }
 
   const handleOnClick = async event => {
-
     if (loading || sent) return
 
     setLoading(true)

@@ -9,7 +9,7 @@ const Contact = () => {
       <SEO title="Contact" />
       <div style={{ padding: "16px" }}>
         <div className="row">
-          <div className="contactFormWrapper col s12 m6 offset-m3">
+          <div className="contactFormWrapper">
             <ContactForm />
           </div>
         </div>
