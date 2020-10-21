@@ -1,7 +1,7 @@
 .ContactForm {
   padding: 16px;
   text-align: center;
-
+  width: 100%;
   h5 {
     i {
       text-decoration: underline;
@@ -26,4 +26,10 @@
   margin: auto;
   background: white;
   box-shadow: 0 0 4px gray;
+  max-width: 500px;
+
+  @media (min-width: 901px) {
+    min-width: 500px;
+    max-width: 800px;
+  }
 }
