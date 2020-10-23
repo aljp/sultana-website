@@ -13,6 +13,9 @@ module.exports = {
           `Lobster`,
           `Montserrat`,
           `Montserrat\:300,400,400i,900b`,
+          `Poppins`,
+          `Poppins\:300,400,400i,900b`,
+          `Gilroy\:300,400,400i,900b`,
           `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
         ],
         display: "swap",
