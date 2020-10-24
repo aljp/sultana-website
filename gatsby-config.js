@@ -10,10 +10,9 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Lobster`,
+          `material icons`,
           `Montserrat`,
           `Montserrat\:300,400,400i,900b`,
-          `Poppins`,
           `Poppins\:300,400,400i,900b`,
           `Gilroy\:300,400,400i,900b`,
           `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
@@ -51,8 +50,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Sultana Digital`,
+        short_name: `Sultana`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

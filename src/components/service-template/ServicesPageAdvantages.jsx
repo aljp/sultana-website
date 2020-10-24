@@ -2,7 +2,8 @@ import React from 'react';
 import Card from 'components/generic-components/Card';
 
 const ServicesPageAdvantages = (props) => {
-  const { blurb, cards, iconMap } = props;
+  const { iconMap } = props;
+  const { blurb, cards } = props.data
 
   return (
     <div className="servicesAdvantages">

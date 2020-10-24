@@ -1,4 +1,4 @@
-.servicesContactUs-wrapper {
+.servicesConsultation-wrapper {
   position: relative;
   z-index: 1;
 
@@ -6,7 +6,7 @@
     opacity: 0.5
   }
 }
-.servicesContactUs {
+.servicesConsultation {
   height: 800px;
   color: white;
   &-content {
@@ -20,5 +20,12 @@
       font-weight: 900;
     }
   }
+  .ContactForm {
+    .input-field {
+      label {
+        color: white;
+      }
 
+    }
+  }
 }

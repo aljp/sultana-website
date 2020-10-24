@@ -3,6 +3,16 @@
 @import "services-template/services-template-header.scss";
 @import "services-template/services-template-advantages.scss";
 @import "services-template/services-template-contact-us.scss";
+@import "services-template/services-template-breakdown.scss";
+@import "generic-components/carousel.scss";
+
+.services-page>.sultana-nav {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid $sultana-tertiary;
+}
 
 .topper {
   position: relative;
@@ -36,5 +46,6 @@
     content: '.';
     color: $sultana-primary;
     font-size: 80px;
+    font-weight: 900;
   }
 }

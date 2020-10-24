@@ -2,7 +2,8 @@ import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
 
 const ServicesPageHeader = (props) => {
-  const { title, description, backgroundImage } = props;
+  const { backgroundImage } = props;
+  const { title, description } = props.data;
 
   const descriptionHtml = { __html: description }
   return (
