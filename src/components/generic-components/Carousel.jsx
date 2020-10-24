@@ -1,14 +1,19 @@
-import React, { useRef, useEffect, cloneElement, Children } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 const Carousel = (props) => {
   const itemsRef = useRef(null)
   const { currentPage, pages } = props;
+  const [pageWidth, setPageWidth] = useState(0)
 
   useEffect(() => { itemsRef.current.scrollLeft = currentPage * pageWidth }, [currentPage])
 
-  const pageWidth = 
-    itemsRef.current?.clientWidth - (itemsRef.current?.paddingLeft || 0) - (itemsRef.current?.paddingRight || 0)
+  
 
+  useEffect(() => {
+    const width = 
+      itemsRef.current?.clientWidth - (itemsRef.current?.paddingLeft || 0) - (itemsRef.current?.paddingRight || 0)
+    setPageWidth(width)
+  }, [])
   
   return (
     <div className="Carousel">

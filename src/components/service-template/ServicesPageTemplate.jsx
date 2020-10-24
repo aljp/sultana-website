@@ -4,6 +4,7 @@ import ServicesPageHeader from 'components/service-template/ServicesPageHeader';
 import ServicesPageAdvantages from 'components/service-template/ServicesPageAdvantages';
 import ServicesPageConsultation from 'components/service-template/ServicesPageConsultation';
 import ServicesPageBreakdown from 'components/service-template/ServicesPageBreakdown';
+import ServicesPageContactUs from 'components/service-template/ServicesPageContactUs';
 import { ReactComponent as Development } from "images/serviceCards/004-programming-1.svg"
 
 const data = {
@@ -102,6 +103,7 @@ const ServicesPageTemplate = (props) => {
       <ServicesPageAdvantages data={data.advantages} iconMap={iconMap} />
       <ServicesPageConsultation data={data.shared.consultation} image={image.consultationBackground.childImageSharp.fluid} />
       <ServicesPageBreakdown data={data.breakdown} image={image.lifeCycleImage.childImageSharp.fluid}/>
+      <ServicesPageContactUs />
     </>
   )
 };
