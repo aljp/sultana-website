@@ -30,7 +30,10 @@
     }
   ],
   "aboutUs": {
-    "title": "Web design and development firm based in Sydney",
+    "header": {
+      "title": "About Us",
+      "description": ["A Web design and development firm based in Sydney"]
+    },
     "content": [
       "We're a team of two Sydney based web developers who have been working in the industry for over 10 years. With our years of experience behind us we decided to take the leap and start Sultana Digital.",
       "We specialise in helping business and individuals realise their dream website, whether it's a new website for your restaurant to take bookings, or a boutique high end web store. We'll work with you to make it happen"

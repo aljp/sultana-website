@@ -2,9 +2,9 @@ import React from "react"
 import Layout from "components/layout"
 import SEO from "components/seo"
 import ContactForm from "components/contact/ContactForm"
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from "gatsby"
 
-import BackgroundImage from "gatsby-background-image";
+import BackgroundImage from "gatsby-background-image"
 
 const Contact = () => {
   const data = useStaticQuery(graphql`
@@ -22,12 +22,19 @@ const Contact = () => {
     <Layout>
       <SEO title="Contact" />
       <div>
-      <BackgroundImage
+        <BackgroundImage
           fluid={data.mapBackground.childImageSharp.fluid}
-          style={{ zIndex: "-1", position: 'absolute', width: '100%', height: '100%' }}
-        ></BackgroundImage>
+          style={{
+            zIndex: "-1",
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <div className="overlay"></div>
+        </BackgroundImage>
       </div>
-      <div style={{ padding: "16px", paddingTop: '6vh' }}>
+      <div style={{ padding: "16px", paddingTop: "6vh" }}>
         <div className="row">
           <div className="contactFormWrapper" style={{ zIndex: "1" }}>
             <ContactForm />
