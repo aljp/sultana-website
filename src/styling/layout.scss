@@ -1,10 +1,10 @@
-@import 'colors.scss';
-@import 'header.scss';
-@import 'suit.scss';
-@import 'contact.scss';
-@import 'footer.scss';
-@import 'about.scss';
-@import 'services.scss';
+@import "colors.scss";
+@import "header.scss";
+@import "suit.scss";
+@import "contact.scss";
+@import "footer.scss";
+@import "about.scss";
+@import "services.scss";
 
 html {
   height: 100%;
@@ -43,7 +43,7 @@ body {
     }
 
     &:hover {
-      background-color: $sultana-primary
+      background-color: $sultana-primary;
     }
   }
 }
@@ -67,5 +67,14 @@ button.btn-plaintext {
   
   &:focus {
     background: none;
+  }
+}
+
+.transparent {
+  > .sultana-nav {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }

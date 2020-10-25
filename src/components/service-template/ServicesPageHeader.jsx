@@ -9,16 +9,15 @@ const ServicesPageHeader = (props) => {
   return (
     <>
       <div className="servicesHeader-wrapper">
-        <BackgroundImage
+        <BackgroundImage 
           fluid={backgroundImage}
           className="servicesHeader"
-        >
-          <div className="servicesHeader-content container u-flex u-flexCol u-flexAlignItemsCenter u-flexJustifyCenter">
-            <h1><b>{title}</b></h1>
-            <p dangerouslySetInnerHTML={descriptionHtml}></p>
-          </div>
-          <div className="overlay"></div>
-        </BackgroundImage>
+        />
+        <div className="servicesHeader-content">
+          <h1><b>{title}</b></h1>
+          <p dangerouslySetInnerHTML={descriptionHtml}></p>
+        </div>
+        <div className="overlay"></div>
       </div>
     </>
   )

@@ -19,6 +19,7 @@ const ServicesPageBreakdownBottom = (props) => {
           </div>
         </div>
       </div>
+
       <div className="container">
         <div className="servicesPageBreakdown-bottomHeader u-flex u-flexAlignItemsEnd">
           <div style={{ position: 'relative' }}>
@@ -33,7 +34,6 @@ const ServicesPageBreakdownBottom = (props) => {
           <p>{price.description}</p>
         </div>
       </div>
-
     </div>
   );
 };
