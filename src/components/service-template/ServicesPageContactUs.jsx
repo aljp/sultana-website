@@ -61,7 +61,7 @@ const ServicesPageContactUs = (props) => {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusamus officiis dolorem in sit! Quo veritatis quae necessitatibus aperiam veniam omnis ipsam autem minus, quaerat, qui eos nobis cumque aliquam!
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium asperiores nulla minus dolorum eius iste, nam facilis omnis accusamus velit fugiat earum ipsa facere quis voluptas quaerat. Incidunt, harum excepturi?
           </p>
-          <div className="u-flex u-flexJustifyBetween" style={{ width: '100%' }}>
+          <div className="u-flex u-flexJustifyBetween u-flexWrap" style={{ width: '100%' }}>
             <TextInput
               label="Name"
               value={name}

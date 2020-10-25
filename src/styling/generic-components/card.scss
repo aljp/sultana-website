@@ -2,9 +2,8 @@ $corner-size: 36px;
 
 .service-card-wrapper {
   position: relative;
-  height: 360px;
   background-color: $background-primary;
-  padding: 10px;
+  padding: 16px;
   width: 300px;
 
   &:last-child {
@@ -14,12 +13,8 @@ $corner-size: 36px;
   &:hover,
   &.active {
     .service-card {
-      max-height: 500px;
-
-      .card-body {
-        display: block;
-        max-height: 400px;
-      }
+      background-color: lighten($sultana-primary, 10%);
+      color: white;
 
       .service-card-icon-wrapper {
         background-color: $sultana-primary;
@@ -35,14 +30,14 @@ $corner-size: 36px;
     }
   }
   .service-card {
-    flex: 1 0 33%;
-    margin-right: 20px;
+    height: 100%;
     text-align: center;
     overflow-y: hidden;
-    border-radius: 4px;
+    border-radius: 8px;
+    padding: 16px;
     transition: max-height 0.6s ease, background-color 0.5s ease-out;
-    height: auto;
-    max-height: 250px;
+    background-color: white;
+    box-shadow: 0px 0px 20px $sultana-primary;
 
     &:before {
       content: "";
@@ -71,15 +66,10 @@ $corner-size: 36px;
       transition: border-width 0.6s, border-color 0.3s;
     }
 
-    .card-body {
-      height: auto;
-      max-height: 0;
-      transition: max-height 0.6s;
-    }
     &-icon-wrapper {
       margin-top: 10px;
       position: relative;
-      background: white;
+      background: $background-primary;
       padding: 20px;
       border-radius: 50%;
       transition: all 0.5s;

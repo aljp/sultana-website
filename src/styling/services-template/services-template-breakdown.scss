@@ -8,21 +8,32 @@
     }
   }
   &-counter {
+    height: 60px;
     div {
-      font-size: 60px;
+      font-size: 40px;
       font-weight: 800;
-      margin-left: 20px;
       transition: all 0.4s;
+      margin-left: 20px;
+
+      @media (min-width: 991px) {
+        font-size: 60px;
+      }
     }
     
     .active {
-      font-size: 100px;
+      font-size: 60px;
       color: $sultana-primary;
+      @media (min-width: 991px) {
+        font-size: 100px;
+      }
     }
   }
 
   .Carousel {
-    width: 400px;
+    width: 80vw;
+    @media (min-width: 991px) {
+      width: 400px;
+    }
   }
   &-middle {
     width: 80vw;

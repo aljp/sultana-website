@@ -2,7 +2,7 @@ import React from 'react';
 import CircleSvg from "components/CircleSvg"
 
 const Card = (props) => {
-  const { icon, content, body } = props;
+  const { icon, content, title } = props;
   
   return (
     <div
@@ -23,10 +23,10 @@ const Card = (props) => {
             {icon}
           </div>
         </div>
+        <div><b>{title}</b></div>
         <p>
           {content}
         </p>
-        <div className="card-body">{body}</div>
       </div>
     </div>
   )
