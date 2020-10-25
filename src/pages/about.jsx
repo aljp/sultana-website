@@ -12,8 +12,11 @@ const AboutPage = () => {
     query {
       homeJson {
         aboutUs {
+          header {
+            title
+            description
+          }
           content
-          title
         }
       }
       adamImage: file(relativePath: { eq: "adam_portrait.png" }) {
@@ -40,14 +43,14 @@ const AboutPage = () => {
     }
   `)
 
-  const { title, content } = data.homeJson.aboutUs
+  const { header, content } = data.homeJson.aboutUs
 
   return (
     <Layout className="transparent">
       <SEO title="About Us" />
       <Header
-        title="About Us"
-        description={(<p>{title}</p>)}
+        title={header.title}
+        description={header.description.map((text) => (<p>{text}</p>))}
       />
       <div className="about-container container">
         <div className="row">
