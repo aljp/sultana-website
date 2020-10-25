@@ -74,7 +74,10 @@
     },
     "header": {
       "title": "Development",
-      "description": "How can we help?<br /> When you have an idea for a website you'll want to work with dedicated individuals to bring it to life. We have experience working with others to build websites and applications that are beautiful, fast, and effective."
+      "description": [
+        "How can we help?", 
+        "When you have an idea for a website you'll want to work with dedicated individuals to bring it to life. We have experience working with others to build websites and applications that are beautiful, fast, and effective."
+      ]
     },
     "advantages": {
       "blurb": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste omnis esse, veritatis, rem temporibus rerum sit dicta doloremque molestias ullam eum unde saepe ad odit voluptatum quaerat non, amet a?",
