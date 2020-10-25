@@ -1,0 +1,41 @@
+@import "../../../styling/colors.scss";
+
+.header-wrapper {
+  position: relative;
+  .header {
+    min-height: 100px;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+    background-color: $sultana-primary;
+    background-color: rgba($sultana-primary, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .header-background {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: $sultana-primary;
+      padding-top: 60px; // 60px for navbar
+    }
+  }
+
+  .header-content {
+    color: white;
+    z-index: 999;
+    padding-top: 92px; // 60px for navbar + 32px padding
+    padding-bottom: 32px;
+
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-family: Poppins;
+      font-weight: 900;
+      margin: 0;
+    }
+  }
+}
