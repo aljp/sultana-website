@@ -4,7 +4,7 @@ import "materialize-css/dist/css/materialize.css"
 import "styling/home.scss"
 import Layout from "components/layout"
 import SEO from "components/seo"
-import GenericHeader from "components/generic-header/GenericHeader"
+import Header from "components/generic-components/header/Header"
 import ServiceSection from 'components/services/ServiceSection'
 
 const ServicesPage = () => {
@@ -34,9 +34,9 @@ const ServicesPage = () => {
   return(
     <Layout>
       <SEO title="Services" />
-      <GenericHeader
-        preTitle="Services"
-        title={title}
+      <Header
+        title="Services"
+        description={(<p>{title}</p>)}
       />
       <div className="container">
         <div className="row">
