@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Layout from 'components/layout';
 import ServicesPageTemplate from 'components/service-template/ServicesPageTemplate';
 import { ReactComponent as Development } from "images/serviceCards/004-programming-1.svg"
-import 'styling/services-template.scss';
 
 const DevelopmentPage = (props) => {
   const query = useStaticQuery(graphql`

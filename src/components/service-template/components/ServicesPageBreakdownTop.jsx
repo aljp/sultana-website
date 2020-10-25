@@ -4,14 +4,9 @@ const ServicesPageBreakdownTop = (props) => {
   const { title, page, pageLength } = props;
 
   return (
-    <div className="servicesPageBreakdown-top u-flex u-flexJustifyBetween u-flexWrap container">
+    <div className="servicesPageBreakdown-top u-flex u-flexJustifyBetween u-flexAlignItemsEnd container">
       <div className="servicesPageBreakdown-header">
         <h2 className="topper">{title}</h2>
-      </div>
-      <div className="servicesPageBreakdown-counter u-flex u-flexAlignItemsEnd hide-on-small-only">
-        {[...Array(pageLength).keys()].map((index) => (
-          <div className={page === index ? "active" : ''}>0{index + 1}</div>
-        ))}
       </div>
     </div>
   )

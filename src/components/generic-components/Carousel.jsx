@@ -17,7 +17,7 @@ const Carousel = (props) => {
     <div className="Carousel">
       <div className="Carousel-items u-flex" ref={itemsRef}>
         {pages.map((page) => (
-          <div style={{ minWidth: `${carouselPageWidth}px` }}>
+          <div style={{ minWidth: `${carouselPageWidth}px`, maxWidth: `${carouselPageWidth}px` }}>
             {page}
           </div>
         ))}
