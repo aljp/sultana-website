@@ -12,12 +12,13 @@ const ServicesPageHeader = (props) => {
         <BackgroundImage 
           fluid={backgroundImage}
           className="servicesHeader"
-        />
-        <div className="servicesHeader-content">
-          <h1><b>{title}</b></h1>
-          <p dangerouslySetInnerHTML={descriptionHtml}></p>
-        </div>
-        <div className="overlay"></div>
+        >
+          <div className="servicesHeader-content">
+            <h1><b>{title}</b></h1>
+            <p dangerouslySetInnerHTML={descriptionHtml}></p>
+          </div>
+          <div className="overlay"></div>
+        </BackgroundImage>
       </div>
     </>
   )
