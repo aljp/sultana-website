@@ -32,7 +32,7 @@ const ServicesPage = () => {
   const { title, content } = data.homeJson.services
   
   return(
-    <Layout>
+    <Layout className="transparent">
       <SEO title="Services" />
       <Header
         title="Services"
