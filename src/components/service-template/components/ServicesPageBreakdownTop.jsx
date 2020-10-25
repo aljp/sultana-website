@@ -4,7 +4,7 @@ const ServicesPageBreakdownTop = (props) => {
   const { title, page, pageLength } = props;
 
   return (
-    <div className="servicesPageBreakdown-top u-flex u-flexJustifyBetween container">
+    <div className="servicesPageBreakdown-top u-flex u-flexJustifyBetween u-flexWrap container">
       <div className="servicesPageBreakdown-header">
         <h2 className="topper">{title}</h2>
       </div>

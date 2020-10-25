@@ -29,11 +29,11 @@ const ServiceCards = props => {
   const handleOnClick = e => e.currentTarget.classList.toggle("active")
 
   return (
-    <div className="row serviceCardWrapper">
+    <div className="row serviceCardWrapper container">
       <div className="services-header">
         <h2>Services we offer</h2>
       </div>
-      <div className="u-flex u-flexJustifyCenter u-flexAlignItemsBaseline u-flexWrap service-cards">
+      <div className="u-flex u-flexJustifyCenter u-flexWrap service-cards">
         {data.homeJson.serviceCards.map(card => (
           <div
             key={card.name}
