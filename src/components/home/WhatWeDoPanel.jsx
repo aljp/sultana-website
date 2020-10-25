@@ -28,7 +28,7 @@ const WhatWeDoPanel = (props) => {
         imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
         contentPanel={(
           <section className="WhatWeDoPanel">
-            <h2>What we do</h2>
+            <h2 className="topper title-period">What we do</h2>
             <p>
               {data.homeJson.panelContent.whatWeDo}
             </p>
