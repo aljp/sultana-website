@@ -5,9 +5,7 @@ const Carousel = (props) => {
   const { currentPage, pages } = props;
   const [pageWidth, setPageWidth] = useState(0)
 
-  useEffect(() => { itemsRef.current.scrollLeft = currentPage * pageWidth }, [currentPage])
-
-  
+  useEffect(() => { itemsRef.current.scrollLeft = currentPage * pageWidth }, [currentPage, pageWidth])
 
   useEffect(() => {
     const width = 

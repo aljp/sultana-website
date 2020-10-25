@@ -1,31 +1,33 @@
-.servicesConsultation-wrapper {
+.ServicesPageContactUs {
   position: relative;
-  z-index: 1;
 
-  .overlay {
-    opacity: 0.5
-  }
-}
-.servicesConsultation {
-  height: 800px;
-  color: white;
-  &-content {
+  .container {
     position: relative;
     z-index: 99;
-    height: 100%;
-
   }
-  &-header {
-    h2 {
-      font-weight: 900;
+
+  &-image {
+    height: 900px;
+  }
+
+  h2 {
+    color: white;
+    font-weight: 900;
+  }
+
+  p {
+    color: white;
+    width: 40vw;
+  }
+
+  .input-field {
+    label {
+      color: white;
     }
   }
-  .ContactForm {
-    .input-field {
-      label {
-        color: white;
-      }
 
-    }
+  input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
+    width: 400px;
+    border-color: white;
   }
 }
