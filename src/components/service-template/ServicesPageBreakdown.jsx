@@ -27,6 +27,7 @@ const ServicesPageBreakdown = (props) => {
         incrementPage={incrementPage}
         carouselPages={carouselPages}
         page={page}
+        setPage={(value) => setPage(value)}
       />
       <ServicesPageBreakdownBottom price={price} carouselPages={carouselPages} page={page} />
     </div>
