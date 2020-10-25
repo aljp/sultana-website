@@ -5,7 +5,7 @@ import "materialize-css/dist/css/materialize.css"
 import "styling/about.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import GenericHeader from "../components/generic-header/GenericHeader"
+import Header from "components/generic-components/header/Header"
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -30,17 +30,24 @@ const AboutPage = () => {
           }
         }
       }
+      headerBackground: file(relativePath: { eq: "development_header.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
   const { title, content } = data.homeJson.aboutUs
 
   return (
-    <Layout>
+    <Layout className="transparent">
       <SEO title="About Us" />
-      <GenericHeader
-        preTitle="About Us"
-        title={title}
+      <Header
+        title="About Us"
+        description={(<p>{title}</p>)}
       />
       <div className="about-container container">
         <div className="row">
