@@ -13,7 +13,11 @@ module.exports = {
           `material icons`,
           `Montserrat`,
           `Montserrat\:300,400,400i,900b`,
+<<<<<<< HEAD
           `Poppins\:300,400,400i,900,900b`,
+=======
+          `Poppins\:300,400,400i,900b`,
+>>>>>>> services-template
           `Gilroy\:300,400,400i,900b`,
           `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
         ],
