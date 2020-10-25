@@ -7,7 +7,7 @@ const ServicesPageBreakdownBottom = (props) => {
   return (
     <div className="servicesPageBreakdown-bottom">
       <div className="servicesPageBreakdown-indicator">
-      <h5 className="container"><b>Stages of development</b></h5>
+        <h5 className="container"><b>Stages of development</b></h5>
         <div className="servicesPageBreakdown-bottomIndicatorsContainer">
           <div className="container  u-flex u-flexJustifyBetween">
             {[...carouselPages.map((page) => page.title)].map((title, index) => (

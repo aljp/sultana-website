@@ -8,7 +8,7 @@ const ServicesPageBreakdownTop = (props) => {
       <div className="servicesPageBreakdown-header">
         <h2 className="topper">{title}</h2>
       </div>
-      <div className="servicesPageBreakdown-counter u-flex u-flexAlignItemsEnd">
+      <div className="servicesPageBreakdown-counter u-flex u-flexAlignItemsEnd hide-on-small-only">
         {[...Array(pageLength).keys()].map((index) => (
           <div className={page === index ? "active" : ''}>0{index + 1}</div>
         ))}

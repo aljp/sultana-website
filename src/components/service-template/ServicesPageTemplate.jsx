@@ -17,8 +17,14 @@ const ServicesPageTemplate = (props) => {
         backgroundImage={images.headerBackground.childImageSharp.fluid} 
       />
       <ServicesPageAdvantages data={data.advantages} iconMap={iconMap} />
-      <ServicesPageConsultation data={data.shared.consultation} image={images.consultationBackground.childImageSharp.fluid} />
-      <ServicesPageBreakdown data={data.breakdown} image={images.lifeCycleImage.childImageSharp.fluid}/>
+      <ServicesPageConsultation 
+        data={data.shared.consultation} 
+        image={images.consultationBackground.childImageSharp.fluid} 
+      />
+      <ServicesPageBreakdown 
+        data={data.breakdown} 
+        image={images.lifeCycleImage.childImageSharp.fluid}
+      />
       <ServicesPageContactUs image={images.contactUsImage.childImageSharp.fluid}/>
     </>
   )

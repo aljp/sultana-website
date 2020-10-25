@@ -38,6 +38,10 @@
   &-middle {
     width: 80vw;
     margin: auto;
+
+    &Carousel {
+      margin-bottom: 20px;
+    }
   }
 
   &-bottom {
@@ -60,6 +64,7 @@
     
     &IndicatorsContainer {
       position: relative;
+      margin-bottom: 20px;
 
       .strike-through-container {
         position: absolute;
@@ -124,5 +129,6 @@
 
   h5 {
     text-transform: uppercase;
+    margin-bottom: 20px;
   }
 }

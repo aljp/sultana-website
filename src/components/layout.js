@@ -5,12 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./nav";
 import 'styling/layout.scss';
 import SultanaFooter from "components/footer";
+import { GlobalContextProvider } from 'components/GlobalContext';
 
 const Layout = ({ children, className }) => {
   const data = useStaticQuery(graphql`
@@ -23,12 +24,20 @@ const Layout = ({ children, className }) => {
     }
   `)
 
+  const [pageWidth, setPageWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.resize = () => { setPageWidth(window.innerWidth) };
+  }, [])
+
   return (
-    <div className={`page-container ${className || ''}`}>
-      <Nav siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
-      <SultanaFooter />
-    </div>
+    <GlobalContextProvider value={{ pageWidth }}>
+      <div className={`page-container ${className || ''}`}>
+        <Nav siteTitle={data.site.siteMetadata.title} />
+        <main>{children}</main>
+        <SultanaFooter />
+      </div>
+    </GlobalContextProvider>
   )
 }
 
