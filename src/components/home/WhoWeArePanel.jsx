@@ -29,7 +29,7 @@ return (
       imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
       contentPanel={(
         <section className="WhatWeDoPanel">
-          <h2>Who we are</h2>
+          <h2 className="topper title-period">Who we are</h2>
           <p>
             {data.homeJson.panelContent.whoWeAre}
           </p>
