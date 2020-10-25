@@ -7,7 +7,7 @@ const ServicesPageBreakdownMiddle = (props) => {
   const { image, decrementPage, incrementPage, carouselPages, page } = props;
 
   return (
-    <div className="servicesPageBreakdown-middle u-flex">
+    <div className="servicesPageBreakdown-middle u-flex u-flexWrap">
       <div style={{ marginRight: '100px' }}>
         <Img fluid={image} style={{ width: '46vw' }} />
       </div>

@@ -17,7 +17,10 @@
 
   p {
     color: white;
-    width: 40vw;
+    @media (min-width: 991px) {
+      width: 40vw;
+
+    }
   }
 
   .input-field {
@@ -27,7 +30,11 @@
   }
 
   input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
-    width: 400px;
     border-color: white;
+    width: 90vw;
+
+    @media (min-width: 991px) {
+      width: 400px;
+    }
   }
 }
