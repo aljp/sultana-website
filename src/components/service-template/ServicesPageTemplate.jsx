@@ -11,7 +11,6 @@ const ServicesPageTemplate = (props) => {
   return (
     <>
       <Header 
-        style={{height: '900px'}} 
         title={data.header.title} 
         description={data.header.description.map((text) => {return (<p>{text}</p>)})} 
         backgroundImage={images.headerBackground.childImageSharp.fluid} 
