@@ -12,7 +12,7 @@ import Nav from "./nav";
 import 'styling/layout.scss';
 import SultanaFooter from "components/footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, className }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="page-container">
+    <div className={`page-container ${className || ''}`}>
       <Nav siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <SultanaFooter />

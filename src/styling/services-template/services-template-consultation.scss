@@ -1,0 +1,31 @@
+.servicesConsultation-wrapper {
+  position: relative;
+  z-index: 1;
+
+  .overlay {
+    opacity: 0.5
+  }
+}
+.servicesConsultation {
+  height: 800px;
+  color: white;
+  &-content {
+    position: relative;
+    z-index: 99;
+    height: 100%;
+
+  }
+  &-header {
+    h2 {
+      font-weight: 900;
+    }
+  }
+  .ContactForm {
+    .input-field {
+      label {
+        color: white;
+      }
+
+    }
+  }
+}
