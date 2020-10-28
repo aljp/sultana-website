@@ -1,13 +1,18 @@
 @import "../generic-components/card.scss";
 
 .servicesAdvantages {
+  padding: 160px 0;
   &-header {
     position: relative;
-    margin: auto;
+    margin: 0 0 60px 0;
     width: 100%;
     @media (min-width: 991px) {
       width: 1160px;
     }
+  }
+
+  &-blurb {
+    margin-bottom: 60px;
   }
 
   &-cards {

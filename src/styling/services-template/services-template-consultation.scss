@@ -8,11 +8,16 @@
 }
 .servicesConsultation {
   color: white;
+  padding: 160px 0;
   &-content {
     position: relative;
     z-index: 99;
     height: 100%;
+  }
 
+  h2 {
+    font-weight: 900;
+    font-family: Poppins;
   }
 
   .ContactForm {

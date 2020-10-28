@@ -21,11 +21,17 @@
   &::before {
     content: '';
     position: absolute;
-    top: -10px;
-    width: 116px;
-    height: 16px;
     background-color: $sultana-primary;
-    border-radius: 8px;
+    top: -10px;
+    width: 80px;
+    height: 10px;
+    border-radius: 5px;
+
+    @media #{med-and-up} {
+      width: 116px;
+      height: 16px;
+      border-radius: 8px;
+    }
   }
 }
 
@@ -46,12 +52,21 @@
   &::after {
     content: '.';
     color: $sultana-primary;
-    font-size: 80px;
     font-weight: 900;
+    font-size: 70px;
+    
+    @media #{med-and-up} {
+      font-size: 80px;
+    }
   }
 }
 
 h2 {
   font-weight: 900;
   font-size: 2.6rem;
+  font-family: Poppins;
+}
+
+p {
+  font-size: 20px;
 }

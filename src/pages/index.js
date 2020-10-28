@@ -1,5 +1,4 @@
 import React from "react"
-import 'styling/home.scss'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LandingHeader from "components/home/LandingHeader"
@@ -15,6 +14,6 @@ const IndexPage = () => (
     <WhatWeDoPanel />
     <ServiceCards />
   </Layout>
-)
+);
 
 export default IndexPage
