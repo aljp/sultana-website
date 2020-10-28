@@ -18,6 +18,7 @@ const ServicesPageBreakdownMiddle = (props) => {
           <div className="container  u-flex u-flexJustifyBetween">
             {[...carouselPages.map((page) => page.title)].map((title, index) => (
               <CarouselIndicator
+                key={title}
                 className={`${index === page ? 'active' : ''}`}
                 title={title}
                 setPage={() => setPage(index)}
@@ -46,7 +47,7 @@ const ServicesPageBreakdownMiddle = (props) => {
                 />
               ))}
             />
-            <div>
+            <div className="u-flex u-flexJustifyCenter">
               <button onClick={decrementPage} aria-label="move carousel left" type="button" className="btn-plaintext">
                 <span className="material-icons">keyboard_arrow_left</span>
               </button>

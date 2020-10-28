@@ -8,14 +8,17 @@
   position: relative;
 }
 
-.servicesHeader-content {
+.header-content {
   position: relative;
   color: white;
   z-index: 99;
 
-  h1 {
-    font-family: Poppins;
-    font-size: 100px;
-    font-weight: 900px;
+  .header-content {
+    h1 {
+      font-family: Poppins;
+      font-size: 100px;
+      font-weight: 900px;
+      margin-bottom: 60px;
+    }
   }
 }
