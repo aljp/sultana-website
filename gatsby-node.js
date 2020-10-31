@@ -19,3 +19,14 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   })
 }
+
+exports.createPages = ({ actions }) => {
+  const { createPage } = actions
+
+  if (process.env.NODE_ENV !== `production`) {
+    createPage({
+      path: `/development`,
+      component: require.resolve(`./src/hidden-pages/development.jsx`),
+    })
+  }
+}
