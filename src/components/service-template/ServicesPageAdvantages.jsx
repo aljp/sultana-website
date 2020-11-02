@@ -15,7 +15,7 @@ const ServicesPageAdvantages = (props) => {
       </div>
       <div className="servicesAdvantages-cards u-flex u-flexAlignItemsCenter u-flexWrap">
         {cards.map((card) => (
-          <Card title={card.title} content={card.content} icon={iconMap[card.title]} />
+          <Card key={card.title} title={card.title} content={card.content} icon={iconMap[card.title]} />
         ))}
       </div>
     </div>

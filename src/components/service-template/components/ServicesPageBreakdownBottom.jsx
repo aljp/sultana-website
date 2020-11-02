@@ -6,32 +6,22 @@ const ServicesPageBreakdownBottom = (props) => {
 
   return (
     <div className="servicesPageBreakdown-bottom">
-      <div className="servicesPageBreakdown-indicator">
-      <h5 className="container"><b>Stages of development</b></h5>
-        <div className="servicesPageBreakdown-bottomIndicatorsContainer">
-          <div className="container  u-flex u-flexJustifyBetween">
-            {[...carouselPages.map((page) => page.title)].map((title, index) => (
-              <CarouselIndicator className={`${index === page ? 'active' : ''}`} title={title} />
-            ))}
-          </div>
-          <div className="strike-through-container">
-            <div className="strike-through"></div>
-          </div>
-        </div>
-      </div>
-
       <div className="container">
-        <div className="servicesPageBreakdown-bottomHeader u-flex u-flexAlignItemsEnd">
-          <div style={{ position: 'relative' }}>
+        <div className="row u-flex u-flexAlignItemsEnd">
+          <div className="col l4" style={{ position: 'relative' }}>
             <div className="topper">
               <h2 className="title-period"><b>Price</b></h2>
             </div>
           </div>
-          <span style={{ fontColor: 'gray' }}>from</span>
-          <span>${price.amount}</span>
+          <div className="servicesPageBreakdown-bottomHeader col l10 m8">
+            <span style={{ fontColor: 'gray' }}>from</span>
+            <span> ${price.amount}</span>
+          </div>
         </div>
-        <div className="servicesPageBreakdown-bottomText">
-          <p>{price.description}</p>
+        <div className="row">
+          <div className="servicesPageBreakdown-bottomText col l7">
+            <p>{price.description}</p>
+          </div>
         </div>
       </div>
     </div>

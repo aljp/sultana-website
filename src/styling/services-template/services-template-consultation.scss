@@ -7,19 +7,19 @@
   }
 }
 .servicesConsultation {
-  height: 800px;
   color: white;
+  padding: 160px 0;
   &-content {
     position: relative;
     z-index: 99;
     height: 100%;
+  }
 
+  h2 {
+    font-weight: 900;
+    font-family: Poppins;
   }
-  &-header {
-    h2 {
-      font-weight: 900;
-    }
-  }
+
   .ContactForm {
     .input-field {
       label {

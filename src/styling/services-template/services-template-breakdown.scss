@@ -1,10 +1,12 @@
 .servicesPageBreakdown {
+  margin: 160px 0;
   &-header {
     width: 490px;
+    margin-bottom: 60px;
     h2 {
-      font-family: Gilroy;
+      font-family: Poppins;
       font-weight: 800;
-      font-size: 70px;
+      font-size: 3.2rem;
     }
   }
   &-counter {
@@ -29,24 +31,115 @@
     }
   }
 
-  .Carousel {
-    width: 80vw;
-    @media (min-width: 991px) {
-      width: 400px;
+  &-indicatorContainer {
+    position: relative;
+    margin-bottom: 60px;
+
+    @media #{$medium-and-up} {
+      margin-bottom: 100px;
+    }
+
+    .strike-through-container {
+      position: absolute;
+      top: 15px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      @media #{$medium-and-up} {
+        top: 20px;
+      }
+
+      .strike-through {
+        height: 1px;
+        width: 99vw;
+        background-color: gray;
+        z-index: 1
+      }
+    }
+    .CarouselIndicator {
+      position: relative;
+      z-index: 99;
+
+      &-circle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        background-color: $background-primary;
+        z-index: 99;
+
+        @media #{$medium-and-up} {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      &-expander {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        background-color: transparent;
+        z-index: 97;
+        transition: all 0.3s;
+      }
+    }
+
+    .CarouselIndicator.active {
+      .CarouselIndicator-circle {
+        background-color: $sultana-primary;
+        border: none;
+      }
+
+      .CarouselIndicator-expander {
+        width: 40px;
+        height: 40px;
+        top: -5px;
+        left: -5px;
+        border-color: $sultana-primary;
+        background-color: $background-primary;
+
+        @media #{$medium-and-up} {
+          width: 50px;
+          height: 50px;
+        }
+      }
     }
   }
-  &-middle {
-    width: 80vw;
-    margin: auto;
-  }
 
+  &-middle.row {
+    margin: auto;
+    margin-bottom: 60px;
+
+    @media (min-width: 991px) {
+      margin-bottom: 100px;
+    }
+
+  }
+  &-middleCarousel {
+    margin-bottom: 60px;
+
+    @media #{$medium-and-down} {
+      width: 90%;
+      margin: 0 auto 100px auto;
+    }
+
+    .material-icons {
+      font-size: 40px;
+      margin: 0 20px;
+    }
+  }
   &-bottom {
+    h2 {
+      margin: 0;
+    }
+
     &Header {
-      
-      h2 {
-        margin: 0;
-      }
-      
       span:first-of-type {
         color: grey;
       }
@@ -58,71 +151,11 @@
       }
     }
     
-    &IndicatorsContainer {
-      position: relative;
 
-      .strike-through-container {
-        position: absolute;
-        top: 20px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-
-        .strike-through {
-          height: 1px;
-          width: 99vw;
-          background-color: gray;
-          z-index: 1
-        }
-      }
-      .CarouselIndicator {
-        position: relative;
-        z-index: 99;
-
-        &-circle {
-          position: relative;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          border: 1px solid gray;
-          background-color: $background-primary;
-          z-index: 99;
-        }
-
-        &-expander {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          border: 1px solid transparent;
-          background-color: transparent;
-          z-index: 97;
-          transition: all 0.3s;
-        }
-      }
-
-      .CarouselIndicator.active {
-        .CarouselIndicator-circle {
-          background-color: $sultana-primary;
-          border: none;
-        }
-
-        .CarouselIndicator-expander {
-          width: 50px;
-          height: 50px;
-          top: -5px;
-          left: -5px;
-          border-color: $sultana-primary;
-          background-color: $background-primary;
-        }
-      }
-
-    }
   }
 
   h5 {
     text-transform: uppercase;
+    margin-bottom: 20px;
   }
 }

@@ -58,8 +58,7 @@ const ServicesPageContactUs = (props) => {
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem accusamus officiis dolorem in sit! Quo veritatis quae necessitatibus aperiam veniam omnis ipsam autem minus, quaerat, qui eos nobis cumque aliquam!
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium asperiores nulla minus dolorum eius iste, nam facilis omnis accusamus velit fugiat earum ipsa facere quis voluptas quaerat. Incidunt, harum excepturi?
+            Like what you hear? Leave your details and we'll organise a one-on-one consultation free of charge to discuss how we can help you!
           </p>
           <div className="u-flex u-flexJustifyBetween u-flexWrap" style={{ width: '100%' }}>
             <TextInput
