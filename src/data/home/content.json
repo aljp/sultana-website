@@ -128,5 +128,13 @@
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt, possimus consequatur perferendis, nulla corrupti totam delectus culpa vitae nisi recusandae porro non deserunt quisquam nobis nam provident eos nihil."
       }
     }
+  },
+  "optimisation": {
+    "header": {
+      "title": "Optimisation",
+      "description": [
+        "A fast website improves customer confidence and drives sales."
+      ]
+    }
   }
 }
