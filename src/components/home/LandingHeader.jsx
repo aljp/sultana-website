@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby';
 import Button from "components/form-helpers/Button"
 import fallback from 'images/waves-crashing.png'
 import logo from "images/logos/SULTANA_coloured.svg"
@@ -19,7 +20,7 @@ const LandingHeader = props => (
           We have solutions
         </div>
         <div>
-          <Button>Contact us</Button>
+          <Link to="/contact"><Button>Contact us</Button></Link>
         </div>
       </div>
     </div>
