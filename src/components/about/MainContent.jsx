@@ -1,7 +1,7 @@
 import React from 'react'
 
 const MainContent = (props) => {
-  const { danielImage, adamImage, content } = props;
+  const {content, currentPage } = props;
 
   return (
     <div className="col m12 l8 no-padding" id={currentPage}>

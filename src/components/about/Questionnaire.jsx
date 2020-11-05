@@ -2,12 +2,12 @@ import React from 'react';
 import Img from 'gatsby-image';
 
 const Questionnaire = (props) => {
-  const { content, image, currentPage } = props;
+  const { content, image, page } = props;
 
   return (
-    <>
+    <div id={page} className="u-flex u-flexCol u-flexAlignItemsCenter">
       <Img fluid={image} className="AboutUs-imageLarge" />
-      <div className="col m12 l8 no-padding" id={currentPage}>
+      <div className="col l12" style={{margin: 'auto'}}>
         <div className="AboutUs-questionnaire">
           {content.map(({ question, answer }) => (
             <div key={question}>
@@ -19,7 +19,7 @@ const Questionnaire = (props) => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

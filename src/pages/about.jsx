@@ -77,26 +77,31 @@ const AboutPage = () => {
       />
       <div className="about-container container">
         <div className="row">
-          {currentPage === 'main' && <MainContent content={content} />}
+          <MainContent content={content} page="main" />
+        </div>
+        <div className="row">
+          <h2 className="title-period">Meet the team</h2>
           {currentPage === 'daniel' && (
             <Questionnaire
               content={data.homeJson.aboutUs.daniel}
               image={data.danielImage.childImageSharp.fluid}
+              page="daniel"
             />
           )}
           {currentPage === 'adam' && (
             <Questionnaire
               content={data.homeJson.aboutUs.adam}
               image={data.adamImage.childImageSharp.fluid}
+              page="adam"
             />
           )}
-          <div className="about-content no-margin u-flex u-flexWrap u-flexAlignItemsCenter" style={{ paddingTop: '40px' }}>
+          <div className="about-content no-margin u-flex u-flexJustifyCenter u-flexWrap u-flexAlignItemsCenter" style={{ paddingTop: '40px' }}>
             <button className="btn-plaintext" onClick={handlePageChange('daniel')}>
-              <Img fluid={data.danielImage.childImageSharp.fluid} style={{ width: '300px', marginRight: '24px' }} />
+              <Img fluid={data.danielImage.childImageSharp.fluid} className="AboutUs-buttonImage" />
               <p><b>Daniel Teale</b></p>
             </button>
             <button className="btn-plaintext" onClick={handlePageChange('adam')}>
-              <Img fluid={data.adamImage.childImageSharp.fluid} style={{ width: '300px' }} />
+              <Img fluid={data.adamImage.childImageSharp.fluid} className="AboutUs-buttonImage" />
               <p><b>Adam Jacquier-Parr</b></p>
             </button>
           </div>
