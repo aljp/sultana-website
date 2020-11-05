@@ -4,16 +4,64 @@
 .about-container {
   .about-content {
     h3 {
-      text-align:center;
-      font-size:x-large;
+      text-align: center;
+      font-size: x-large;
     }
+
     &.no-margin {
       margin: 0;
-      width:100%;
+      width: 100%;
     }
 
     img {
-      width:100%;
+      width: 100%;
+    }
+
+    button {
+      box-shadow: 10px 10px 18px gray;
+      margin: 18px;
+      transition: box-shadow 0.2s;
+      p {
+        font-size: 18px;
+      }
+
+      &:hover {
+        box-shadow: 4px 4px 8px gray;
+        text-decoration: underline;
+      }
+
+      .AboutUs-buttonImage {
+        width: 240px;
+
+        @media #{$large-and-up} {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: 2.6rem;
+    font-family: Poppins;
+  }
+
+  .AboutUs-imageLarge {
+    width: 400px;
+    margin: 40px auto;
+    
+    @media #{$large-and-up} {
+      margin: 80px auto;
+    }
+  }
+
+  .AboutUs-questionnaire {
+    b {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 }

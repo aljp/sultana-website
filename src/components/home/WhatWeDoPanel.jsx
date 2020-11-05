@@ -27,9 +27,9 @@ const WhatWeDoPanel = (props) => {
       <ImageTextPanel
         imagePanel={(<Img fluid={data.placeholderImage.childImageSharp.fluid} />)}
         contentPanel={(
-          <section className="WhatWeDoPanel">
+          <section className="WhatWeDoPanel" >
             <h2 className="topper title-period">What we do</h2>
-            <p>
+            <p data-sultana-editable-id="whatWeDo">
               {data.homeJson.panelContent.whatWeDo}
             </p>
             <Button>
