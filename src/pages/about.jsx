@@ -47,7 +47,7 @@ const AboutPage = () => {
 
   return (
     <Layout className="transparent">
-      <SEO title="About Us" />
+      <SEO title="About Our Development Experts" description="Learn more about who we are and what we do"/>
       <Header
         title={header.title}
         description={header.description.map((text) => (<p>{text}</p>))}

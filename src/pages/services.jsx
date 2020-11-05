@@ -33,7 +33,7 @@ const ServicesPage = () => {
   
   return(
     <Layout className="transparent">
-      <SEO title="Services" />
+      <SEO title="Our Services In Depth" />
       <Header
         title="Services"
         description={(<p>{title}</p>)}
