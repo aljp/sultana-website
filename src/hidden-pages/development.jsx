@@ -2,7 +2,15 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from 'components/layout';
 import ServicesPageTemplate from 'components/service-template/ServicesPageTemplate';
-import { ReactComponent as Development } from "images/serviceCards/004-programming-1.svg"
+import { ReactComponent as Price } from "images/serviceCards/money-bag.svg"
+import { ReactComponent as Experience } from "images/serviceCards/experience.svg"
+import { ReactComponent as LatestTechnology } from "images/serviceCards/innovation.svg"
+import { ReactComponent as Maintainability } from "images/serviceCards/wrench.svg"
+import Header from "../components/generic-components/header/Header";
+import ServicesPageAdvantages from "../components/service-template/ServicesPageAdvantages";
+import ServicesPageConsultation from "../components/service-template/ServicesPageConsultation";
+import ServicesPageBreakdown from "../components/service-template/ServicesPageBreakdown";
+import ServicesPageContactUs from "../components/service-template/ServicesPageContactUs";
 
 const DevelopmentPage = (props) => {
   const query = useStaticQuery(graphql`
@@ -72,14 +80,34 @@ const DevelopmentPage = (props) => {
   
   const { headerBackground, consultationBackground, lifeCycleImage, contactUsImage } = query;
   const images = { headerBackground, consultationBackground, lifeCycleImage, contactUsImage }
+  const data = query.homeJson.development;
   
   const iconMap = {
-    Lorem: <Development />,
+    price: <Price />,
+    experience: <Experience />,
+    latest_technology: <LatestTechnology />,
+    maintainability: <Maintainability />
   }
 
   return (
     <Layout className="services-page">
-      <ServicesPageTemplate images={images} data={query.homeJson.development} iconMap={iconMap} />
+      <ServicesPageTemplate>
+        <Header 
+          title={data.header.title} 
+          description={data.header.description.map((text) => {return (<p>{text}</p>)})} 
+          backgroundImage={images.headerBackground.childImageSharp.fluid} 
+        />
+        <ServicesPageAdvantages data={data.advantages} iconMap={iconMap} />
+        <ServicesPageConsultation 
+          data={data.shared.consultation} 
+          image={images.consultationBackground.childImageSharp.fluid} 
+        />
+        <ServicesPageBreakdown 
+          data={data.breakdown} 
+          image={images.lifeCycleImage.childImageSharp.fluid}
+        />
+        <ServicesPageContactUs image={images.contactUsImage.childImageSharp.fluid}/>
+      </ServicesPageTemplate>
     </Layout>
   );
 }

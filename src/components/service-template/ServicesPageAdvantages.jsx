@@ -13,9 +13,9 @@ const ServicesPageAdvantages = (props) => {
       <div className="servicesAdvantages-blurb">
         <p>{blurb}</p>
       </div>
-      <div className="servicesAdvantages-cards u-flex u-flexAlignItemsCenter u-flexWrap">
+      <div className="servicesAdvantages-cards u-flex u-flexWrap">
         {cards.map((card) => (
-          <Card key={card.title} title={card.title} content={card.content} icon={iconMap[card.title]} />
+          <Card key={card.title} title={card.title} content={card.content} icon={iconMap[card.title.toLowerCase().split(' ').join('_')]} />
         ))}
       </div>
     </div>

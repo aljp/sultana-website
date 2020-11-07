@@ -6,27 +6,27 @@
   "serviceCards": [
     {
       "name": "Web Development",
-      "content": "Innovative application development in a range of technologies",
-      "body": "Be confident your application is built efficient and secure, from prototyping to deployment, using the latest and greatest in technology",
+      "content": "Innovative application development in a range of technologies. From e-commerce webpages to full feature applications.",
+      "body": "Be confident your application is built efficient and secure, from prototyping to deployment, using the latest and greatest in technology.",
       "icon": "development"
     },
     {
-      "name": "Optimisation",
-      "content": "Spruce up your website to ensure the perfect experience for both humans and web crawlers",
-      "body": "Poor performance can affect your ranking on google and conversion rate. Our optimisation packages identify and solve performance issues hurting your bottom line",
+      "name": "Page Optimisation",
+      "content": "Spruce up your website to ensure the perfect experience for both humans and web crawlers.",
+      "body": "Poor performance can affect your ranking on google and conversion rate. Our optimisation packages identify and solve performance issues hurting your bottom line.",
       "icon": "optimization"
     },
     {
       "name": "Search Engine Optimisation",
-      "content": "SEO tooling, integration and assistance to maximise your reach and conversions",
-      "body": "All aspects of technical SEO as well as assistance in integrating SEO into your marketing campaign",
+      "content": "SEO tooling, integration and assistance to maximise your reach and conversions.",
+      "body": "All aspects of technical SEO as well as assistance in integrating SEO into your marketing campaign.",
       "icon": "seo"
     },
     {
-      "name": "E-commerce",
-      "content": "Beautiful and effective ecommerce pages to ensure maximum conversion",
-      "body": "Powerful e-commerce sites that drive business and revenue, support available for Shopify, Woocommerce and more",
-      "icon": "ecommerce"
+      "name": "Analytics",
+      "content": "Leverage your data and have it presented in a format that is human readable and distributable.",
+      "body": "Graphing, report generation, tooling can be leveraged to deliver meaningful business value.",
+      "icon": "analytics"
     }
   ],
   "aboutUs": {
@@ -35,9 +35,122 @@
       "description": ["A Web design and development firm based in Sydney"]
     },
     "content": [
-      "We're a team of two Sydney based web developers who have been working in the industry for over 10 years. With our years of experience behind us we decided to take the leap and start Sultana Digital.",
-      "We specialise in helping business and individuals realise their dream website, whether it's a new website for your restaurant to take bookings, or a boutique high end web store. We'll work with you to make it happen"
-    ]
+      "We're a team of two Sydney based web developers who have been working in the industry for over 10 years. Dissatisfied with the quality and underhanded tactics of some existing agencies, we decided to take the leap and start Sultana Digital.",
+      "We specialise in helping business and individuals realise their potential through technology. Whether you want to spruce up your website, build a production-ready application, leverage your data or anything in between, we'll work with you to make it happen.",
+      "Our focus is on delivering to our partners goals, whatever they may be. We take pride in providing quality software solutions that can be relied upon, we don't cut corners and we treat every product with the same care as our own. Whilst established companies are happy to sit on their laurels, we're here to earn them."
+    ],
+    "daniel": {
+      "fullName": "Daniel Teale",
+      "role": "Co-Founder and Developer",
+      "questionnaire": [
+        {
+          "question": "What made you want to create Sultana Digital?",
+          "answer": [
+            "There were two main reasons why I wanted to start Sultana. Having worked as a developer I felt like I had a lot of value to share. I’d always dreamt of starting something of my own and take great satisfaction in building something and watching it grow. Starting a business has been my life’s greatest challenge but also the most rewarding.",
+            "The second reason is a general dissatisfaction with the services that were already on offer. Having looked at a number of codebases that were procured from other agencies I couldn’t help but feel ashamed that so many of my peers in the industry produce such low quality work for such a high price. I wanted to be a positive change in the industry and provide an avenue for people who are not tech savvy to comfortably take advantage of the technology out there and the benefits it can bring to your life."
+          ]
+        },
+        {
+          "question": "How did you get into development and meet the rest of the team?",
+          "answer": [
+            "Worked as an Apple repair technician however I felt like I’d hit a wall in terms of what I could learn and where I could take it in my career. My family all work in tech as developers so learning programming seemed like the logical step for me to take. I enrolled at Coder Academy’s coding bootcamp course and found that I have a natural flare for it and enjoyed the challenges it brings and the learning opportunities.",
+            "Adam and I both went to the same High School and met each other through a mutual friend. We quickly bonded over our shared interests and became fast friends. That was over 10 years ago and we’re still close to this day."
+          ]
+        },
+        {
+          "question": "What skills/expertise do you bring to the Sultana team?",
+          "answer": [
+            "I feel like I bring a lot of ambition and drive to the table and keep us on point and moving forward. I tend to handle most of the business side of things, making sure we’re operating effectively. I also personally do a lot of the development, handling a large part of the customer facing parts of our website. On top of my developer abilities I’m also a very creative person and enjoy all kinds of creative pursuits so see myself as a jack of all trades that fills in the gaps left by the rest of the team."
+          ]
+        },
+        {
+          "question": "What do you most appreciate most about working with technology?",
+          "answer": [
+            "I’ve always loved the variety of learning opportunities and the challenges that it brings every day. The world of technology is constantly changing and you have to be constantly learning new things to keep up. I’m always on the search for novel experiences and tech delivers that in droves. I’ve also always enjoyed solving problems and thinking logically."
+          ]
+        },
+        {
+          "question": "What’s exciting to you in the world of tech right now?",
+          "answer": [
+            "You can’t talk about what’s happening in tech right now without mentioning AI and the world of opportunities it brings. It’s absolutely mind boggling what you can achieve with computers these days and I find automating tasks and making things more efficient endlessly satisfying.",
+            "Another thing that interests me is the ways we can now leverage data to guide our decisions. After reading the book “Freakonomics” I’ve been fascinated with what actually goes on in reality and how you can leverage data to get an accurate picture of what’s happening and how that can challenge our preconceived notions of what is true and what isn’t."
+          ]
+        },
+        {
+          "question": "Where do you see yourself in 10 years?",
+          "answer": [
+            "I want Sultana to be bigger and better and become an organisation that brings joy and success to our partners and employees. The perfect scenario for myself would be for Sultana to become a household name with a good number of large projects under our belt and overall pushing humanity forwards on the bleeding edge of technology."
+          ]
+        },
+        {
+          "question": "What are your other hobbies and interests?",
+          "answer": [
+            "I have a great many interests in just about everything. I enjoy learning new things and have a keen interest in science, politics and history as well as health and nutrition. I also enjoy creative pursuits like electronic music production and can play multiple instruments.",
+            "I enjoy the outdoors, going to bushwalks and getting into nature, as I spend so much of my time tied to a desk I like to spend my free time away from the screen and enjoying the fresh air. I’ve recently taken up skateboarding again, after gyms closed down due to covid. I needed an outlet and skateboarding proved to be fun and exciting, it keeps me  fit and in my youth."
+          ]
+        },
+        {
+          "question": "If you weren’t a developer what would your career be?",
+          "answer": [
+            "If you’d asked me this question 10 years ago I probably would have said something creative like a musician, however these days I think I’d prefer to be a scientist or engineer. I love learning and I want to be in a place that moves society forward and I enjoy being on the edge of what we know."
+          ]
+        }
+      ]
+    },
+    "adam": {
+      "fullName": "Adam Jacquier-Parr",
+      "role": "Co-Founder and Developer",
+      "questionnaire": [
+        {
+          "question": "What made you want to create Sultana Digital?",
+          "answer": [
+            "I had been a developer and project manager for a number of years and was interested in working for myself and seeing what I could accomplish.  Sultana Digital is meant to have a more direct involvement with clients and companies, so I can apply the knowledge and experience I have with software to help others."
+          ]
+        },
+        {
+          "question": "How did you get into development and meet the rest of the team?",
+          "answer": [
+            "I completed a Bachelor of Software Engineering and got a job out of university working at GalaBid, a silent auction and fundraising platform that was getting its legs in a garage in 2012.  I stayed with the company for a number of years and moved to a principal position as a senior software developer and project manager.  GalaBid became one of the largest silent auction and charity fundraising platforms in Australia, and also helps fundraising events in New Zealand, the UK, USA, and several other countries."
+          ]
+        },
+        {
+          "question": "What skills/expertise do you bring to the Sultana team?",
+          "answer": [
+            "I’ve had to “wear many hats” having worked at a small software company that’s grown to a large platform, and adopted more responsibilities as I’ve become a senior in my field.  My expertise is in project management, full stack development, and cloud infrastructure.  I know how it is planning and designing products and features, and following that through to developing products and applications."
+          ]
+        },
+        {
+          "question": "What do you most appreciate most about working with technology?",
+          "answer": [
+            "Sometimes a few dedicated people working from a garage can make something that changes the world.  The outsized effect that software and technology can have on people and businesses has been truly flourishing since I started developing.  I also enjoy learning, and technology is one of those things that you never really stop learning.  Software is getting both easier to use, and also much more complicated, and I like to help people make more informed decisions when it comes to their website or application."
+          ]
+        },
+        {
+          "question": "What’s exciting to you in the world of tech right now?",
+          "answer": [
+            "There’s so much going on in tech that it’s hard to pin down what I’m most excited about.  The way data is being used to drive the current innovation in machine learning has some amazing potential.  I think virtual and augmented reality will take a more common place in the near future, not for video games, but for educational purposes such as teaching people about car engines, or more complicated."
+          ]
+        },
+        {
+          "question": "Where do you see yourself in 10 years?",
+          "answer": [
+            "I’d like to be overseeing a successful software company with passionate people that delivers great products and services, that’s the dream for Sultana Digital. There’s that saying that if you really enjoy what you do for work, and the people you work with, it doesn’t feel like work, and I hope that I can foster that kind of environment for myself and others"
+          ]
+        },
+        {
+          "question": "What are your other hobbies and interests?",
+          "answer": [
+            "I like to play video games, read mostly science fiction books (I’ve been listening to some great sci-fi podcasts too recently), reading about current events in technology, software, and info security, and I have a small vegetable and herb garden that I keep alive."
+          ]
+        },
+        {
+          "question": "If you weren’t a developer what would your career be?",
+          "answer": [
+            "I may have gotten into the graphic design industry if I wasn’t a software developer, I used to make animations using photoshop and flash, and I always have fun when I get to mock up interfaces for projects."
+          ]
+        }
+      ]
+    }
   },
   "services" : {
     "title": "How we can help you",
@@ -72,7 +185,7 @@
     "shared": {
       "consultation": {
         "title": "Get a free consultation",
-        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quo doloribus ipsum optio magnam recusandae, iste accusamus veniam numquam aperiam provident alias nihil sint ut cum velit cupiditate assumenda voluptate."
+        "content": "The best way to contact us is by using this form and we will get back to you as soon as we can. Consultations are free of charge. The more descriptive your request is the better so we can adequately prepare your consultation."
       }
     },
     "header": {
@@ -83,23 +196,23 @@
       ]
     },
     "advantages": {
-      "blurb": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste omnis esse, veritatis, rem temporibus rerum sit dicta doloremque molestias ullam eum unde saepe ad odit voluptatum quaerat non, amet a?",
+      "blurb": "We are a new business, but old hands of the development industry. We're looking to establish ourselves and the goal of any transaction is for you to walk away so satisfied that you want to tell everyone about us. While established agencies are happy to sit on their laurels, we're looking to earn them!",
       "cards": [
         {
-          "title": "Lorem",
-          "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea est ipsam facere at sed, corporis atque vel aspernatur non ipsum cumque commodi voluptate repudiandae deserunt harum facilis iure placeat libero."
+          "title": "Price",
+          "content": "As we are looking to establish our name in the industry, you can expect top quality service for a low price."
         },
         {
-          "title": "Lorem",
-          "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea est ipsam facere at sed, corporis atque vel aspernatur non ipsum cumque commodi voluptate repudiandae deserunt harum facilis iure placeat libero."
+          "title": "Experience",
+          "content": "We have over 10 years experience in the software industry, there aren't many problems you can across in development that we haven't solved already. You can guarantee we will get the job done and done well"
         },
         {
-          "title": "Lorem",
-          "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea est ipsam facere at sed, corporis atque vel aspernatur non ipsum cumque commodi voluptate repudiandae deserunt harum facilis iure placeat libero."
+          "title": "Latest Technology",
+          "content": "Older agencies have a tendency to stick to the technologies they know and have the skillsets for. We have the luxury of easily reskilling to take advantage of the latest in technologies to ensure you get a robust and future-proof result"
         },
         {
-          "title": "Lorem",
-          "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea est ipsam facere at sed, corporis atque vel aspernatur non ipsum cumque commodi voluptate repudiandae deserunt harum facilis iure placeat libero."
+          "title": "Maintainability",
+          "content": "We always conduct our work in such a way that it can be easily picked up by someone else in the future. Our goal is to help you grow and sometimes that means making ourselves redundant. Unfortunate for us but ideal for you!"
         }
       ]
     },
@@ -107,25 +220,93 @@
       "title": "Our Software Life Cycle",
       "pages": [
         { 
-          "title": "Planning",
-          "content": "Once we understand what you’re looking for, we’ll work out a step-by-step plan to make the software a reality"
+          "title": "Consultation",
+          "content": "We will engage in discussions with you and ensure that we both understand your needs and how we can achieve them"
         },
         { 
           "title": "Planning",
-          "content": "Once we understand what you’re looking for, we’ll work out a step-by-step plan to make the software a reality"
+          "content": "Once we understand the business requirements, we’ll draw up the technological requirements and break it down into milestones that can be tracked by you and your team"
         },
         { 
-          "title": "Planning",
-          "content": "Once we understand what you’re looking for, we’ll work out a step-by-step plan to make the software a reality"
+          "title": "Building",
+          "content": "We will begin work on building out the functionality of the application. Work will continue until the milestone is completed. Communication is kept to a minimum during this phase to allow us to complete the work in a timely manner."
         },
         { 
-          "title": "Planning",
-          "content": "Once we understand what you’re looking for, we’ll work out a step-by-step plan to make the software a reality"
+          "title": "Testing and QA",
+          "content": "After the build is complete we conduct our own thorough testing to ensure it is bug free. This will include some automated testing as well as human quality control"
+        },
+        { 
+          "title": "Client QA",
+          "content": "Once our own testing phase is complete we will provide a means for you to test it yourself. Our pricing includes two iterations to ensure you are happy with the result."
+        },
+        { 
+          "title": "Milestone delivery",
+          "content": "Once you are happy with the milestone we will go back to the building phase and repeat those steps for each milestone of the product."
+        },
+        { 
+          "title": "Deployment",
+          "content": "After all milestones are complete we will discuss and implement a deployment plan so that you can get your product into the hands of your customers. There are numerous options available for hosting and deployment and we will ensure that you have the right plan for you"
         }
       ],
       "price": {
-        "amount": 3000,
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt, possimus consequatur perferendis, nulla corrupti totam delectus culpa vitae nisi recusandae porro non deserunt quisquam nobis nam provident eos nihil."
+        "amount": 300,
+        "description": "Price includes consultation, planning, implementation and deployment. The exact price will vary depending on the nature of the application and the work involved. Pricing is a flat fee based off our best estimation of the work, applied to an hourly rate."
+      }
+    }
+  },
+  "optimisation": {
+    "shared": {
+      "consultation": {
+        "title": "Get a free consultation",
+        "content": "Get in contact with us, we love what we do and would be happy to have a chat and see if your website could be improved with our help."
+      }
+    },
+    "header": {
+      "title": "Optimisation",
+      "description": [
+        "A fast website improves customer confidence and drives sales."
+      ]
+    },
+    "advantages": {
+      "blurb": "Consult with professionals that know what to look for.  This will give you the peace of mind that your website is doing it's best provide users with a brilliant experience.",
+      "cards": [
+        {
+          "title": "Retention",
+          "content": "A slow website will scare users away! Those extra seconds your website takes to load could be the difference between a user staying on your site and looking elsewhere."
+        },
+        {
+          "title": "Sales",
+          "content": "There's a direct correlation between load times and sales conversions, consulting with professional developers that know what to look for will increase sales."
+        },
+        {
+          "title": "Experience",
+          "content": "You want your users to enjoy using your website and not get frustrated by slow load times."
+        }
+      ]
+    },
+    "breakdown": {
+      "title": "Our Software Life Cycle",
+      "pages": [
+        { 
+          "title": "Consultation",
+          "content": "A conversation with you will allow us to understand your website and the technology behind it, and make sure optimising the site is appropriate for you."
+        },
+        { 
+          "title": "Investigation",
+          "content": "We'll perform an analysis of the website to find opportunities that have the best return on investment."
+        },
+        { 
+          "title": "Planning",
+          "content": "Once we understand what you’re looking for and the circumstances of your site, we’ll work out a step-by-step plan to make the software a reality"
+        },
+        { 
+          "title": "Development",
+          "content": "We'll make the necessary changes to upgrade your website and make it faster than ever!"
+        }
+      ],
+      "price": {
+        "amount": 150,
+        "description": "Optimisation can show great results with very little work, this will always depend on your website however.  Get in contact with us to discuss how we can help you to improve your website."
       }
     }
   }
