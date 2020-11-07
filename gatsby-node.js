@@ -32,5 +32,9 @@ exports.createPages = ({ actions }) => {
       path: `/optimisation`,
       component: require.resolve(`./src/hidden-pages/optimisation.jsx`),
     });
+    createPage({
+      path: `/analytics`,
+      component: require.resolve(`./src/hidden-pages/analytics.jsx`),
+    });
   }
 }
