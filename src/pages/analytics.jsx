@@ -47,7 +47,7 @@ const AnalyticsPage = props => {
           }
         }
       }
-      headerBackground: file(relativePath: { eq: "person-731479.jpg" }) {
+      headerBackground: file(relativePath: { eq: "financial-2860753_1920.jpg" }) {
       childImageSharp {
           fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid

@@ -47,7 +47,7 @@ const OptimisationPage = props => {
           }
         }
       }
-      headerBackground: file(relativePath: { eq: "person-731479.jpg" }) {
+      headerBackground: file(relativePath: { eq: "computer-767781_1920.jpg" }) {
       childImageSharp {
           fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
