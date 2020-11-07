@@ -20,12 +20,20 @@ const AboutPage = () => {
           }
           content
           daniel {
-            question
-            answer
+            fullName
+            role
+            questionnaire {
+              question
+              answer
+            }
           }
           adam {
-            question
-            answer
+            fullName
+            role
+            questionnaire {
+              question
+              answer
+            }
           }
         }
       }
@@ -62,8 +70,7 @@ const AboutPage = () => {
   }, [])
 
   const handlePageChange = (page) => async () => {
-    await setCurrentPage(page)
-    if (window) window.location = `#${page}`;
+    setCurrentPage(page)
   }
 
 
@@ -81,6 +88,17 @@ const AboutPage = () => {
         </div>
         <div className="row">
           <h2 className="title-period">Meet the team</h2>
+          Click on an image to find out more about us
+          <div className="about-content no-margin u-flex u-flexJustifyCenter u-flexWrap u-flexAlignItemsCenter" style={{ paddingTop: '40px' }}>
+            <button className="btn-plaintext" onClick={handlePageChange('daniel')}>
+              <Img fluid={data.danielImage.childImageSharp.fluid} className="AboutUs-buttonImage" />
+              <p><b>Daniel Teale</b></p>
+            </button>
+            <button className="btn-plaintext" onClick={handlePageChange('adam')}>
+              <Img fluid={data.adamImage.childImageSharp.fluid} className="AboutUs-buttonImage" />
+              <p><b>Adam Jacquier-Parr</b></p>
+            </button>
+          </div>
           {currentPage === 'daniel' && (
             <Questionnaire
               content={data.homeJson.aboutUs.daniel}
@@ -95,16 +113,7 @@ const AboutPage = () => {
               page="adam"
             />
           )}
-          <div className="about-content no-margin u-flex u-flexJustifyCenter u-flexWrap u-flexAlignItemsCenter" style={{ paddingTop: '40px' }}>
-            <button className="btn-plaintext" onClick={handlePageChange('daniel')}>
-              <Img fluid={data.danielImage.childImageSharp.fluid} className="AboutUs-buttonImage" />
-              <p><b>Daniel Teale</b></p>
-            </button>
-            <button className="btn-plaintext" onClick={handlePageChange('adam')}>
-              <Img fluid={data.adamImage.childImageSharp.fluid} className="AboutUs-buttonImage" />
-              <p><b>Adam Jacquier-Parr</b></p>
-            </button>
-          </div>
+          
         </div>
       </div>
     </Layout>

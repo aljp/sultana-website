@@ -3,13 +3,17 @@ import Img from 'gatsby-image';
 
 const Questionnaire = (props) => {
   const { content, image, page } = props;
+  const { fullName, role, questionnaire } = content;
 
   return (
     <div id={page} className="u-flex u-flexCol u-flexAlignItemsCenter">
-      <Img fluid={image} className="AboutUs-imageLarge" />
+      <div style={{ textAlign: 'center' }}>
+        <h4><b>{fullName}</b></h4>
+        <p><small>{role}</small></p>
+      </div>
       <div className="col l12" style={{margin: 'auto'}}>
         <div className="AboutUs-questionnaire">
-          {content.map(({ question, answer }) => (
+          {questionnaire.map(({ question, answer }) => (
             <div key={question}>
               <b>{question}</b>
               {answer.map((paragraph) => (
