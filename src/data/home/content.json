@@ -247,11 +247,59 @@
     }
   },
   "optimisation": {
+    "shared": {
+      "consultation": {
+        "title": "Get a free consultation",
+        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quo doloribus ipsum optio magnam recusandae, iste accusamus veniam numquam aperiam provident alias nihil sint ut cum velit cupiditate assumenda voluptate."
+      }
+    },
     "header": {
       "title": "Optimisation",
       "description": [
         "A fast website improves customer confidence and drives sales."
       ]
+    },
+    "advantages": {
+      "blurb": "Consult with professionals that know what to look for.  This will give you the peace of mind that your website is doing it's best provide users with a brilliant experience.",
+      "cards": [
+        {
+          "title": "Retention",
+          "content": "A slow website will scare users away! Those extra seconds your website takes to load could be the difference between a user staying on your site and looking elsewhere."
+        },
+        {
+          "title": "Sales",
+          "content": "There's a direct correlation between load times and sales conversions, consulting with professional developers that know what to look for will increase sales."
+        },
+        {
+          "title": "Experience",
+          "content": "You want your users to enjoy using your website and not get frustrated by slow load times."
+        }
+      ]
+    },
+    "breakdown": {
+      "title": "Our Software Life Cycle",
+      "pages": [
+        { 
+          "title": "Consultation",
+          "content": "A conversation with you will allow us to understand your website and the technology behind it, and make sure optimising the site is appropriate for you."
+        },
+        { 
+          "title": "Investigation",
+          "content": "We'll perform an analysis of the website to find opportunities that have the best return on investment."
+        },
+        { 
+          "title": "Planning",
+          "content": "Once we understand what you’re looking for and the circumstances of your site, we’ll work out a step-by-step plan to make the software a reality"
+        },
+        { 
+          "title": "Development",
+          "content": "We'll make the necessary changes to upgrade your website and make it faster than ever!"
+        }
+      ],
+      "price": {
+        "amount": 150,
+        "description": "Optimisation can show great results with very little work, this will always depend on your website however.  Get in contact with us to discuss how we can help you to improve your website."
+      }
     }
   }
 }
