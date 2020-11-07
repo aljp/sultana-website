@@ -37,6 +37,13 @@ const AboutPage = () => {
           }
         }
       }
+      headerImage: file(relativePath: { eq: "tree-5102896_1920.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       adamImage: file(relativePath: { eq: "adam_portrait.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
@@ -80,16 +87,17 @@ const AboutPage = () => {
       <Header
         ref={contentRef}
         title={header.title}
+        backgroundImage={data.headerImage.childImageSharp.fluid}
         description={header.description.map((text) => (<p>{text}</p>))}
       />
       <div className="about-container container">
         <div className="row">
+          <h2 className="title-period">Meet the team</h2>
           <MainContent content={content} page="main" />
         </div>
         <div className="row">
-          <h2 className="title-period">Meet the team</h2>
-          Click on an image to find out more about us
-          <div className="about-content no-margin u-flex u-flexJustifyCenter u-flexWrap u-flexAlignItemsCenter" style={{ paddingTop: '40px' }}>
+          <p style={{textAlign:'center'}}><small>Click on an image to find out more about us</small></p>
+          <div className="about-content no-margin u-flex u-flexJustifyCenter u-flexWrap u-flexAlignItemsCenter">
             <button className="btn-plaintext" onClick={handlePageChange('daniel')}>
               <Img fluid={data.danielImage.childImageSharp.fluid} className="AboutUs-buttonImage" />
               <p><b>Daniel Teale</b></p>
