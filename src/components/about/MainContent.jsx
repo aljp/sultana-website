@@ -4,7 +4,7 @@ const MainContent = (props) => {
   const {content, currentPage } = props;
 
   return (
-    <div className="col m12 l8 no-padding" id={currentPage}>
+    <div className="" id={currentPage}>
       <div className="about-content">
         {content.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
       </div>

@@ -47,10 +47,11 @@
   }
 
   .AboutUs-imageLarge {
-    width: 400px;
+    width: 300px;
     margin: 40px auto;
     
     @media #{$large-and-up} {
+      width: 400px;
       margin: 80px auto;
     }
   }
