@@ -17,6 +17,14 @@ const DevelopmentPage = (props) => {
     query {
       homeJson {
         development {
+          advantages {
+            title
+            blurb
+            cards {
+              content
+              title
+            }
+          }
           shared {
             consultation {
               content
@@ -26,13 +34,6 @@ const DevelopmentPage = (props) => {
           header {
             title
             description
-          }
-          advantages {
-            blurb
-            cards {
-              content
-              title
-            }
           }
           breakdown {
             title

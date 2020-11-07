@@ -196,6 +196,7 @@
       ]
     },
     "advantages": {
+      "title": "Advantages",
       "blurb": "We are a new business, but old hands of the development industry. We're looking to establish ourselves and the goal of any transaction is for you to walk away so satisfied that you want to tell everyone about us. While established agencies are happy to sit on their laurels, we're looking to earn them!",
       "cards": [
         {
@@ -268,6 +269,7 @@
       ]
     },
     "advantages": {
+      "title": "Advantages",
       "blurb": "Consult with professionals that know what to look for.  This will give you the peace of mind that your website is doing it's best provide users with a brilliant experience.",
       "cards": [
         {
@@ -293,20 +295,78 @@
         },
         { 
           "title": "Investigation",
-          "content": "We'll perform an analysis of the website to find opportunities that have the best return on investment."
+          "content": "We'll perform an analysis of the website to find opportunities that have the best return on investment. Once we understand what you’re looking for and the circumstances of your site, we’ll work out a step-by-step plan to make the software a reality."
         },
         { 
-          "title": "Planning",
-          "content": "Once we understand what you’re looking for and the circumstances of your site, we’ll work out a step-by-step plan to make the software a reality"
+          "title": "Implementation",
+          "content": "Our team will implement the changes that will upgrade your website and make it faster than ever!"
         },
         { 
-          "title": "Development",
-          "content": "We'll make the necessary changes to upgrade your website and make it faster than ever!"
+          "title": "Delivery",
+          "content": "After all is said and done we'll make sure that the changes have made a difference.  You'll be provided a report on the improvements to your website."
         }
       ],
       "price": {
         "amount": 150,
         "description": "Optimisation can show great results with very little work, this will always depend on your website however.  Get in contact with us to discuss how we can help you to improve your website."
+      }
+    }
+  },
+  "analytics": {
+    "header": {
+      "title": "Analytics",
+      "description": [
+        "Do you want to transform data into some meaningful and beautiful?",
+        "We can help."
+      ]
+    },
+    "advantages": {
+      "title": "Advantages",
+      "blurb": "At Sultana Digital we know how to use the right tools to make data useful, whether thats exploring different graphs to present, or reports to provide new insight.",
+      "cards": [
+        {
+          "title": "Graphs & Reports",
+          "content": "Sometimes a lot of data can look like a lot of gibberish. Graphs and reports are the best way to translate data into knowledge."
+        },
+        {
+          "title": "Automation",
+          "content": "Automated workflows and data pipelines allow you to receive weekly reports, implement live dashboard, are more."
+        },
+        {
+          "title": "Hosting",
+          "content": "When your analytics solution requires hosting, we can help you to host it yourself with one of our supported cloud service providers, or host it for you."
+        }
+      ]
+    },
+    "shared": {
+      "consultation": {
+        "title": "Get a free consultation",
+        "content": "Get in contact with us, we love what we do and would be happy to have a chat and see if your website could be improved with our help."
+      }
+    },
+    "breakdown": {
+      "title": "Our Software Life Cycle",
+      "pages": [
+        { 
+          "title": "Consultation",
+          "content": "We'll chat with you to understand the data you have and explain how you can use that to your advantage."
+        },
+        { 
+          "title": "Analysis",
+          "content": "A more in depth process of cataloguing what you have and where you have it so we can draft a plan about how we'll use the right tools for the job.  We'll also discuss a hosting solution with you, so you can either host the software yourself or we can host it for a fee."
+        },
+        { 
+          "title": "Implementation",
+          "content": "Our team will develop a solution that is reliable, valuable, and should tick all the boxes.  At this stage we will also finalize any documentation and instructions that your organisation could need."
+        },
+        {
+          "title": "Delivery",
+          "content": "Everything is built and ready to go!  If we're hosting the solution for you there's nothing to worry about, you'll start gaining insight into your business.  If you want to host the solution on your own infastructure, we'll give you all the software and documentation you need, with a window of support to ensure a smooth transition."
+        }
+      ],
+      "price": {
+        "amount": 300,
+        "description": "Our pricing is competitive, and is tailored to your needs.  Smaller projects such a Google Analytics customisation, can start from as little as $300.  For larger projects such as custom dashboards or complete data piplines a price will be quoted after your free consultation."
       }
     }
   }

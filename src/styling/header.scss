@@ -24,39 +24,47 @@
     flex-direction: row;
 
     li {
-      margin-right: 10px;
+      margin-right: 40px;
+      position: relative;
 
       .link-chevron {
         display: inline-block;
         transform: rotate(90deg);
       }
-      
+
       &:hover {
         .link-chevron {
           transform: rotate(270deg);
         }
       }
-      
+
       &:last-child {
         margin-right: 0;
       }
+
       a {
         color: $sultana-tertiary;
         font-weight: 900;
       }
+
+      .ServicesDropDown {
+        position: absolute;
+        top: 40px;
+        left: -40px;
+        background-color: $sultana-primary;
+
+        li {
+          padding: 10px 40px;
+          margin: 0;
+
+          &:hover {
+            background-color: darken($sultana-primary, 10%);
+          }
+        }
+      }
     }
   }
 
-  h1 {
-      font-family: Lobster;
-      font-weight: 900;
-      position: relative;
-      z-index: 99;
-      color: black;
-  }
-
-
-  
   button {
     display: none;
     background-color: inherit !important;
@@ -102,29 +110,33 @@
 
     svg {
       width: 20px;
+
       .menu_svg__bottom {
         transition: all 0.3s;
       }
+
       .menu_svg__top {
         transition: all 0.3s;
       }
+
       .menu_svg__middle {
         opacity: 1;
         transition: all 0.3s ease-out;
       }
     }
-    
+
     button.open {
       .menu_svg__bottom {
         transform: translate(120px, 24px) rotate(45deg);
       }
+
       .menu_svg__top {
         transform: translate(-153px, 150px) rotate(-45deg);
       }
+
       .menu_svg__middle {
         opacity: 0;
       }
     }
   }
 }
-
