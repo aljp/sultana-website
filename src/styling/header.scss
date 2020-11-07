@@ -24,7 +24,8 @@
     flex-direction: row;
 
     li {
-      margin-right: 10px;
+      margin-right: 40px;
+      position: relative;
 
       .link-chevron {
         display: inline-block;
@@ -44,7 +45,25 @@
         color: $sultana-tertiary;
         font-weight: 900;
       }
+
+      .ServicesDropDown {
+        position: absolute;
+        top: 40px;
+        left: -40px;
+        background-color: $sultana-primary;
+
+        li {
+          padding: 10px 40px;
+          margin: 0;
+          
+          &:hover {
+            background-color: darken($sultana-primary, 10%);
+          }
+        }
+      }
     }
+
+
   }
 
   h1 {
@@ -127,4 +146,5 @@
     }
   }
 }
+
 
