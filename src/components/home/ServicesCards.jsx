@@ -27,8 +27,6 @@ const ServiceCards = props => {
     analytics: <Analytics />,
   }
 
-  const handleOnClick = e => e.currentTarget.classList.toggle("active")
-
   return (
     <div className="row serviceCardWrapper container no-margin">
       <div className="container">
@@ -37,31 +35,6 @@ const ServiceCards = props => {
       <div className="u-flex u-flexJustifyCenter u-flexWrap service-cards">
         {data.homeJson.serviceCards.map(card => (
           <Card title={card.name} content={`${card.content} ${card.body}`} icon={iconMap[card.icon]} />
-          // <div
-          //   key={card.name}
-          //   className="service-card-wrapper"
-          //   onClick={handleOnClick}
-          //   onKeyPress={handleOnClick}
-          //   role="link"
-          //   tabIndex={0}
-          // >
-          //   <div className="service-card">
-          //     <div
-          //       className="u-flex u-flexJustifyCenter"
-          //       style={{ marginBottom: "20px" }}
-          //     >
-          //       <div
-          //         className="service-card-icon-wrapper"
-          //         style={{ width: "100px", height: "100px" }}
-          //       >
-          //         <CircleSvg />
-          //         {i}
-          //       </div>
-          //     </div>
-          //     <p>{card.content}</p>
-          //     <div className="card-body">{card.body}</div>
-          //   </div>
-          // </div>
         ))}
       </div>
     </div>
