@@ -7,7 +7,6 @@ const Card = (props) => {
   return (
     <div
       className="service-card-wrapper"
-      role="link"
       tabIndex={0}
     >
       <div className="service-card">
