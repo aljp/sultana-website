@@ -72,7 +72,7 @@
     "shared": {
       "consultation": {
         "title": "Get a free consultation",
-        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quo doloribus ipsum optio magnam recusandae, iste accusamus veniam numquam aperiam provident alias nihil sint ut cum velit cupiditate assumenda voluptate."
+        "content": "The best way to contact us is by using this form and we will get back to you as soon as we can. Consultations are free of charge. The more descriptive your request is the better so we can adequately prepare your consultation."
       }
     },
     "header": {
@@ -83,23 +83,23 @@
       ]
     },
     "advantages": {
-      "blurb": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste omnis esse, veritatis, rem temporibus rerum sit dicta doloremque molestias ullam eum unde saepe ad odit voluptatum quaerat non, amet a?",
+      "blurb": "We are a new business, but old hands of the development industry. We're looking to establish ourselves and the goal of any transaction is for you to walk away so satisfied that you want to tell everyone about us. While established agencies are happy to sit on their laurels, we're looking to earn them!",
       "cards": [
         {
-          "title": "Lorem",
-          "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea est ipsam facere at sed, corporis atque vel aspernatur non ipsum cumque commodi voluptate repudiandae deserunt harum facilis iure placeat libero."
+          "title": "Price",
+          "content": "As we are looking to establish our name in the industry, you can expect top quality service for a low price."
         },
         {
-          "title": "Lorem",
-          "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea est ipsam facere at sed, corporis atque vel aspernatur non ipsum cumque commodi voluptate repudiandae deserunt harum facilis iure placeat libero."
+          "title": "Experience",
+          "content": "We have over 10 years experience in the software industry, there aren't many problems you can across in development that we haven't solved already. You can guarantee we will get the job done and done well"
         },
         {
-          "title": "Lorem",
-          "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea est ipsam facere at sed, corporis atque vel aspernatur non ipsum cumque commodi voluptate repudiandae deserunt harum facilis iure placeat libero."
+          "title": "Latest Technology",
+          "content": "Older agencies have a tendency to stick to the technologies they know and have the skillsets for. We have the luxury of easily reskilling to take advantage of the latest in technologies to ensure you get a robust and future-proof result"
         },
         {
-          "title": "Lorem",
-          "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea est ipsam facere at sed, corporis atque vel aspernatur non ipsum cumque commodi voluptate repudiandae deserunt harum facilis iure placeat libero."
+          "title": "Maintainability",
+          "content": "We always conduct our work in such a way that it can be easily picked up by someone else in the future. Our goal is to help you grow and sometimes that means making ourselves redundant. Unfortunate for us but ideal for you!"
         }
       ]
     },
@@ -107,25 +107,37 @@
       "title": "Our Software Life Cycle",
       "pages": [
         { 
-          "title": "Planning",
-          "content": "Once we understand what you’re looking for, we’ll work out a step-by-step plan to make the software a reality"
+          "title": "Consultation",
+          "content": "We will engage in discussions with you and ensure that we both understand your needs and how we can achieve them"
         },
         { 
           "title": "Planning",
-          "content": "Once we understand what you’re looking for, we’ll work out a step-by-step plan to make the software a reality"
+          "content": "Once we understand the business requirements, we’ll draw up the technological requirements and break it down into milestones that can be tracked by you and your team"
         },
         { 
-          "title": "Planning",
-          "content": "Once we understand what you’re looking for, we’ll work out a step-by-step plan to make the software a reality"
+          "title": "Building",
+          "content": "We will begin work on building out the functionality of the application. Work will continue until the milestone is completed. Communication is kept to a minimum during this phase to allow us to complete the work in a timely manner."
         },
         { 
-          "title": "Planning",
-          "content": "Once we understand what you’re looking for, we’ll work out a step-by-step plan to make the software a reality"
+          "title": "Testing and QA",
+          "content": "After the build is complete we conduct our own thorough testing to ensure it is bug free. This will include some automated testing as well as human quality control"
+        },
+        { 
+          "title": "Client QA",
+          "content": "Once our own testing phase is complete we will provide a means for you to test it yourself. Our pricing includes two iterations to ensure you are happy with the result."
+        },
+        { 
+          "title": "Milestone delivery",
+          "content": "Once you are happy with the milestone we will go back to the building phase and repeat those steps for each milestone of the product."
+        },
+        { 
+          "title": "Deployment",
+          "content": "After all milestones are complete we will discuss and implement a deployment plan so that you can get your product into the hands of your customers. There are numerous options available for hosting and deployment and we will ensure that you have the right plan for you"
         }
       ],
       "price": {
-        "amount": 3000,
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt, possimus consequatur perferendis, nulla corrupti totam delectus culpa vitae nisi recusandae porro non deserunt quisquam nobis nam provident eos nihil."
+        "amount": 2000,
+        "description": "Price includes consultation, planning, implementation and deployment. The exact price will vary depending on the nature of the application and the work involved. Pricing is a flat fee based off our best estimation of the work, applied to an hourly rate."
       }
     }
   },

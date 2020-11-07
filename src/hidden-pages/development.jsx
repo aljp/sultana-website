@@ -2,7 +2,10 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from 'components/layout';
 import ServicesPageTemplate from 'components/service-template/ServicesPageTemplate';
-import { ReactComponent as Development } from "images/serviceCards/004-programming-1.svg"
+import { ReactComponent as Price } from "images/serviceCards/money-bag.svg"
+import { ReactComponent as Experience } from "images/serviceCards/experience.svg"
+import { ReactComponent as LatestTechnology } from "images/serviceCards/innovation.svg"
+import { ReactComponent as Maintainability } from "images/serviceCards/wrench.svg"
 import Header from "../components/generic-components/header/Header";
 import ServicesPageAdvantages from "../components/service-template/ServicesPageAdvantages";
 import ServicesPageConsultation from "../components/service-template/ServicesPageConsultation";
@@ -80,7 +83,10 @@ const DevelopmentPage = (props) => {
   const data = query.homeJson.development;
   
   const iconMap = {
-    Lorem: <Development />,
+    price: <Price />,
+    experience: <Experience />,
+    latest_technology: <LatestTechnology />,
+    maintainability: <Maintainability />
   }
 
   return (
