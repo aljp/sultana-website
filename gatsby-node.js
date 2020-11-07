@@ -24,17 +24,17 @@ exports.createPages = ({ actions }) => {
   const { createPage } = actions
 
   if (process.env.NODE_ENV !== `production`) {
-    createPage({
-      path: `/development`,
-      component: require.resolve(`./src/hidden-pages/development.jsx`),
-    });
-    createPage({
-      path: `/optimisation`,
-      component: require.resolve(`./src/hidden-pages/optimisation.jsx`),
-    });
-    createPage({
-      path: `/analytics`,
-      component: require.resolve(`./src/hidden-pages/analytics.jsx`),
-    });
+    // createPage({
+    //   path: `/development`,
+    //   component: require.resolve(`./src/hidden-pages/development.jsx`),
+    // });
+    // createPage({
+    //   path: `/optimisation`,
+    //   component: require.resolve(`./src/hidden-pages/optimisation.jsx`),
+    // });
+    // createPage({
+    //   path: `/analytics`,
+    //   component: require.resolve(`./src/hidden-pages/analytics.jsx`),
+    // });
   }
 }

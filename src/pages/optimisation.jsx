@@ -2,7 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "components/layout"
 import ServicesPageTemplate from "components/service-template/ServicesPageTemplate"
-import { ReactComponent as Development } from "images/serviceCards/004-programming-1.svg"
+import { ReactComponent as Retention } from "images/logos/flow.svg"
+import { ReactComponent as Sales } from "images/logos/money-flow.svg"
+import { ReactComponent as Experience } from "images/logos/idea.svg"
 import Header from "components/generic-components/header/Header"
 import ServicesPageAdvantages from "../components/service-template/ServicesPageAdvantages";
 import ServicesPageConsultation from "../components/service-template/ServicesPageConsultation";
@@ -90,9 +92,9 @@ const OptimisationPage = props => {
   }
   const data = query.homeJson.optimisation
   const iconMap = {
-    retention: <Development />,
-    sales: <Development />,
-    experience: <Development />,
+    retention: <Retention />,
+    sales: <Sales />,
+    experience: <Experience />
   }
 
   return (
