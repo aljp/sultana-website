@@ -23,7 +23,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Sydney Web Development Experts" />
       <LandingHeader />
       <WhoWeArePanel />
       <WhatWeDoPanel />
