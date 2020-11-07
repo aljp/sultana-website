@@ -32,7 +32,7 @@
         transform: rotate(90deg);
       }
 
-      &:hover {
+      &.active {
         .link-chevron {
           transform: rotate(270deg);
         }
@@ -41,25 +41,36 @@
       &:last-child {
         margin-right: 0;
       }
+      
+    }
+    a {
+      color: $sultana-tertiary;
+      font-weight: 900;
+    }
+    .ServicesDropDown {
+      background-color: $sultana-primary;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s;
 
-      a {
-        color: $sultana-tertiary;
-        font-weight: 900;
+      &.active {
+        max-height: 400px;
       }
 
-      .ServicesDropDown {
+      @media (min-width: 901px) {
         position: absolute;
         top: 40px;
         left: -40px;
-        background-color: $sultana-primary;
+        box-shadow: 4px 4px 12px black;
+      }
 
-        li {
-          padding: 10px 40px;
-          margin: 0;
+      li {
+        padding: 10px 40px;
+        margin: 0;
+        color: $sultana-tertiary;
 
-          &:hover {
-            background-color: darken($sultana-primary, 10%);
-          }
+        &:hover {
+          background-color: darken($sultana-primary, 10%);
         }
       }
     }
@@ -75,7 +86,7 @@
     justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
-
+    
     button {
       display: block;
     }
@@ -85,26 +96,26 @@
       flex-direction: column;
       position: absolute;
       right: 0;
-      height: 0;
+      max-height: 0;
       top: 44px;
       transition: height 0.3s;
       z-index: 999;
       overflow: hidden;
+      box-shadow: 4px 4px 12px black;
 
       &.open {
         display: flex;
-        height: 180px;
+        max-height: 400px;
       }
 
       li {
         margin: 0;
         text-align: center;
-        height: 60px;
-        width: 200px;
         border-top: 1px solid $sultana-tertiary;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 10px 40px;
       }
     }
 
