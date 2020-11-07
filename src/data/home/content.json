@@ -196,6 +196,7 @@
       ]
     },
     "advantages": {
+      "title": "Advantages",
       "blurb": "We are a new business, but old hands of the development industry. We're looking to establish ourselves and the goal of any transaction is for you to walk away so satisfied that you want to tell everyone about us. While established agencies are happy to sit on their laurels, we're looking to earn them!",
       "cards": [
         {
@@ -268,6 +269,7 @@
       ]
     },
     "advantages": {
+      "title": "Advantages",
       "blurb": "Consult with professionals that know what to look for.  This will give you the peace of mind that your website is doing it's best provide users with a brilliant experience.",
       "cards": [
         {
@@ -294,6 +296,64 @@
         { 
           "title": "Investigation",
           "content": "We'll perform an analysis of the website to find opportunities that have the best return on investment."
+        },
+        { 
+          "title": "Planning",
+          "content": "Once we understand what you’re looking for and the circumstances of your site, we’ll work out a step-by-step plan to make the software a reality"
+        },
+        { 
+          "title": "Development",
+          "content": "We'll make the necessary changes to upgrade your website and make it faster than ever!"
+        }
+      ],
+      "price": {
+        "amount": 150,
+        "description": "Optimisation can show great results with very little work, this will always depend on your website however.  Get in contact with us to discuss how we can help you to improve your website."
+      }
+    }
+  },
+  "analytics": {
+    "header": {
+      "title": "Analytics",
+      "description": [
+        "Do you want to transform data into some meaningful and beautiful?",
+        "We can help."
+      ]
+    },
+    "advantages": {
+      "title": "Advantages",
+      "blurb": "At Sultana Digital we know how to use the right tools to make data useful, whether thats exploring different graphs to present, or reports to provide new insight.",
+      "cards": [
+        {
+          "title": "Graphs & Reports",
+          "content": "Sometimes a lot of data can look like a lot of gibberish. Graphs and reports are the best way to translate data into knowledge."
+        },
+        {
+          "title": "Automation",
+          "content": "Automated workflows and data pipelines allow you to receive weekly reports, implement live dashboard, are more."
+        },
+        {
+          "title": "Hosting",
+          "content": "When your analytics solution requires hosting, we can help you to host it yourself with one of our supported cloud service providers, or host it for you."
+        }
+      ]
+    },
+    "shared": {
+      "consultation": {
+        "title": "Get a free consultation",
+        "content": "Get in contact with us, we love what we do and would be happy to have a chat and see if your website could be improved with our help."
+      }
+    },
+    "breakdown": {
+      "title": "Our Software Life Cycle",
+      "pages": [
+        { 
+          "title": "Consultation",
+          "content": "We'll chat with you to understand the data you have and explain how you can use that to your advantage."
+        },
+        { 
+          "title": "Analysis",
+          "content": "A more in depth process of cataloguing what you have and where you have it, so we can draft a plan on"
         },
         { 
           "title": "Planning",

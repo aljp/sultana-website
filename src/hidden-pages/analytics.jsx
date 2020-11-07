@@ -2,18 +2,20 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "components/layout"
 import ServicesPageTemplate from "components/service-template/ServicesPageTemplate"
-import { ReactComponent as Development } from "images/serviceCards/004-programming-1.svg"
+import { ReactComponent as GraphsReporting } from "images/logos/stats.svg"
+import { ReactComponent as Automation } from "images/logos/engineering.svg"
+import { ReactComponent as Hosting } from "images/logos/lock.svg"
 import Header from "components/generic-components/header/Header"
 import ServicesPageAdvantages from "../components/service-template/ServicesPageAdvantages";
 import ServicesPageConsultation from "../components/service-template/ServicesPageConsultation";
 import ServicesPageBreakdown from "../components/service-template/ServicesPageBreakdown";
 import ServicesPageContactUs from "../components/service-template/ServicesPageContactUs";
 
-const OptimisationPage = props => {
+const AnalyticsPage = props => {
   const query = useStaticQuery(graphql`
     query {
       homeJson {
-        optimisation {
+        analytics {
           header {
             title
             description
@@ -88,11 +90,11 @@ const OptimisationPage = props => {
     lifeCycleImage,
     contactUsImage,
   }
-  const data = query.homeJson.optimisation
+  const data = query.homeJson.analytics
   const iconMap = {
-    retention: <Development />,
-    sales: <Development />,
-    experience: <Development />,
+    graphs_reports: <GraphsReporting />,
+    automation: <Automation />,
+    hosting: <Hosting />,
   }
 
   return (
@@ -122,4 +124,4 @@ const OptimisationPage = props => {
   )
 }
 
-export default OptimisationPage
+export default AnalyticsPage
