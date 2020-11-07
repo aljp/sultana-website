@@ -295,15 +295,15 @@
         },
         { 
           "title": "Investigation",
-          "content": "We'll perform an analysis of the website to find opportunities that have the best return on investment."
+          "content": "We'll perform an analysis of the website to find opportunities that have the best return on investment. Once we understand what you’re looking for and the circumstances of your site, we’ll work out a step-by-step plan to make the software a reality."
         },
         { 
-          "title": "Planning",
-          "content": "Once we understand what you’re looking for and the circumstances of your site, we’ll work out a step-by-step plan to make the software a reality"
+          "title": "Implementation",
+          "content": "Our team will implement the changes that will upgrade your website and make it faster than ever!"
         },
         { 
-          "title": "Development",
-          "content": "We'll make the necessary changes to upgrade your website and make it faster than ever!"
+          "title": "Delivery",
+          "content": "After all is said and done we'll make sure that the changes have made a difference.  You'll be provided a report on the improvements to your website."
         }
       ],
       "price": {
@@ -353,20 +353,20 @@
         },
         { 
           "title": "Analysis",
-          "content": "A more in depth process of cataloguing what you have and where you have it, so we can draft a plan on"
+          "content": "A more in depth process of cataloguing what you have and where you have it so we can draft a plan about how we'll use the right tools for the job.  We'll also discuss a hosting solution with you, so you can either host the software yourself or we can host it for a fee."
         },
         { 
-          "title": "Planning",
-          "content": "Once we understand what you’re looking for and the circumstances of your site, we’ll work out a step-by-step plan to make the software a reality"
+          "title": "Implementation",
+          "content": "Our team will develop a solution that is reliable, valuable, and should tick all the boxes.  At this stage we will also finalize any documentation and instructions that your organisation could need."
         },
-        { 
-          "title": "Development",
-          "content": "We'll make the necessary changes to upgrade your website and make it faster than ever!"
+        {
+          "title": "Delivery",
+          "content": "Everything is built and ready to go!  If we're hosting the solution for you there's nothing to worry about, you'll start gaining insight into your business.  If you want to host the solution on your own infastructure, we'll give you all the software and documentation you need, with a window of support to ensure a smooth transition."
         }
       ],
       "price": {
-        "amount": 150,
-        "description": "Optimisation can show great results with very little work, this will always depend on your website however.  Get in contact with us to discuss how we can help you to improve your website."
+        "amount": 300,
+        "description": "Our pricing is competitive, and is tailored to your needs.  Smaller projects such a Google Analytics customisation, can start from as little as $300.  For larger projects such as custom dashboards or complete data piplines a price will be quoted after your free consultation."
       }
     }
   }
