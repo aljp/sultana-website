@@ -19,7 +19,7 @@ const ServicesPageAdvantages = props => {
             key={card.title}
             title={card.title}
             content={card.content}
-            icon={iconMap[card.title.toLowerCase().replace(/[ \&]+/, "_")]}
+            icon={iconMap[card.title.toLowerCase().replace(/[ &]+/, "_")]}
           />
         ))}
       </div>
