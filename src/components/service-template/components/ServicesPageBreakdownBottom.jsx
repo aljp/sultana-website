@@ -1,8 +1,7 @@
 import React from 'react';
-import CarouselIndicator from 'components/service-template/components/CarouselIndicator';
 
 const ServicesPageBreakdownBottom = (props) => {
-  const { price, carouselPages, page } = props;
+  const { price } = props;
 
   return (
     <div className="servicesPageBreakdown-bottom">

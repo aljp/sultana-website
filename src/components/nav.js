@@ -11,18 +11,19 @@ const Nav = ({ siteTitle }) => {
   const menuButtonRef = useRef(null);
   const { pageWidth } = useContext(GlobalContext)
 
+  const MENU_CUTOFF = 767 
   const [dropdownActive, setDropdownActive] = useState(false)
 
   const handleMouseEnter = () => {
-    if (pageWidth > 901) setDropdownActive(true);
+    if (pageWidth > MENU_CUTOFF) setDropdownActive(true);
   }
 
   const handleDropdown = () => {
     setDropdownActive(!dropdownActive);
   }
 
-  const handleOnMouseLeave = () => { 
-    if (pageWidth > 901) setDropdownActive(false); 
+  const handleOnMouseLeave = () => {
+    if (pageWidth > MENU_CUTOFF) setDropdownActive(false);
   }
 
   const handleOnClick = () => {
@@ -43,29 +44,31 @@ const Nav = ({ siteTitle }) => {
       </div>
       <button onClick={handleOnClick} ref={menuButtonRef} aria-label="Main menu"><Menu /></button>
       <ul className="nav-links" ref={menuRef}>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About Us</Link>
-        </li>
-        <li className={`dropdown-nav-link ${dropdownActive ? 'active' : ''}`} onClick={handleDropdown} onMouseEnter={handleMouseEnter}>
-          <div>
-            <Link to="/services" >Services <span className="link-chevron">&rsaquo;</span></Link>
-          </div>
-          {pageWidth > 901 && (
-            <Dropdown active={dropdownActive} onMouseLeave={handleOnMouseLeave} />
-          )}
-        </li>
+        <Link to="/">
+          <li>
+            Home
+          </li>
+        </Link>
+        <Link to="/about">
+          <li>
+            About Us
+          </li>
+        </Link>
+        <div className={`dropdown-nav-link ${dropdownActive ? 'active' : ''}`} onClick={handleDropdown} onMouseEnter={handleMouseEnter}>
+          <li >
+          <Link to="/services" >Services <span className="link-chevron">&rsaquo;</span></Link>
+          </li>
+          <Dropdown active={dropdownActive} onMouseLeave={handleOnMouseLeave} />
 
-        {pageWidth < 901 && (
-          <Dropdown active={dropdownActive} />
-        )}
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
+        </div>
+
+        <Link to="/contact">
+          <li>
+            Contact
+          </li>
+        </Link>
       </ul>
-    </header>
+    </header >
   );
 };
 
