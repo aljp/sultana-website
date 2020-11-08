@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ServicesPageBreakdownTop = (props) => {
-  const { title, page, pageLength } = props;
+  const { title } = props;
 
   return (
     <div className="servicesPageBreakdown-top u-flex u-flexJustifyBetween u-flexAlignItemsEnd container">
