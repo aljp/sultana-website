@@ -24,10 +24,10 @@ const Layout = ({ children, className }) => {
     }
   `)
 
-  const [pageWidth, setPageWidth] = useState(window.innerWidth);
+  const [pageWidth, setPageWidth] = useState(typeof window !== 'undefined' && window.innerWidth);
 
   useEffect(() => {
-    if (window) {
+    if (typeof window !== 'undefined') {
       window.onresize = () => { setPageWidth(window.innerWidth) };
     }
   }, [])
