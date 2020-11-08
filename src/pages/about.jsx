@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image'
 import "materialize-css/dist/css/materialize.css"
@@ -69,7 +69,6 @@ const AboutPage = () => {
   `)
 
   const [currentPage, setCurrentPage] = useState('main')
-  const contentRef = useRef(null);
   const { header, content } = data.homeJson.aboutUs
 
   useEffect(() => {
@@ -85,7 +84,6 @@ const AboutPage = () => {
     <Layout className="transparent">
       <SEO title="About Our Development Experts" description="Learn more about who we are and what we do"/>
       <Header
-        ref={contentRef}
         title={header.title}
         backgroundImage={data.headerImage.childImageSharp.fluid}
         description={header.description.map((text) => (<p>{text}</p>))}
