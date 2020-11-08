@@ -24,7 +24,7 @@ const Layout = ({ children, className }) => {
     }
   `)
 
-  const [pageWidth, setPageWidth] = useState(null);
+  const [pageWidth, setPageWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     if (window) {
