@@ -21,7 +21,9 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 }
 
 exports.createPages = ({ actions }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
+
+  createRedirect({ fromPath: '/optimisation', toPath: '/support', isPermanent: true, redirectInBrowser: true, force: true })
 
   if (process.env.NODE_ENV !== `production`) {
     createPage({
