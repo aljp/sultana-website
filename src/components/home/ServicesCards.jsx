@@ -1,8 +1,8 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { ReactComponent as Development } from "images/serviceCards/004-programming-1.svg"
-import { ReactComponent as Optimization } from "images/serviceCards/002-computer.svg"
-import { ReactComponent as Seo } from "images/serviceCards/005-analytics.svg"
+import { ReactComponent as Support } from "images/serviceCards/002-computer.svg"
+import { ReactComponent as Automation } from "images/serviceCards/machinery.svg"
 import { ReactComponent as Analytics } from "images/serviceCards/data-analytics.svg"
 import Card from 'components/generic-components/Card'
 
@@ -14,15 +14,15 @@ const ServiceCards = props => {
           name
           content
           body
-          icon
+          type
         }
       }
     }
   `)
   let iconMap = {
     development: <Development />,
-    optimization: <Optimization />,
-    seo: <Seo />,
+    support: <Support />,
+    automation: <Automation />,
     analytics: <Analytics />,
   }
 
@@ -33,7 +33,8 @@ const ServiceCards = props => {
       </div>
       <div className="u-flex u-flexJustifyCenter u-flexWrap service-cards">
         {data.homeJson.serviceCards.map(card => (
-          <Card title={card.name} content={`${card.content} ${card.body}`} icon={iconMap[card.icon]} />
+            <Card title={card.name} content={`${card.content} ${card.body}`} icon={iconMap[card.type]} type={card.type} />
+
         ))}
       </div>
     </div>

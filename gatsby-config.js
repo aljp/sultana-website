@@ -20,6 +20,7 @@ module.exports = {
         display: "swap",
       },
     },
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-svgr`,
     {
