@@ -26,10 +26,10 @@ exports.createPages = ({ actions }) => {
   createRedirect({ fromPath: '/optimisation', toPath: '/support', isPermanent: true, redirectInBrowser: true, force: true })
 
   if (process.env.NODE_ENV !== `production`) {
-    createPage({
-      path: `/automation`,
-      component: require.resolve(`./src/hidden-pages/automation.jsx`),
-    });
+    // createPage({
+    //   path: `/automation`,
+    //   component: require.resolve(`./src/hidden-pages/automation.jsx`),
+    // });
     // createPage({
     //   path: `/optimisation`,
     //   component: require.resolve(`./src/hidden-pages/optimisation.jsx`),

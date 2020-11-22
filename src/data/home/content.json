@@ -380,12 +380,12 @@
     "header": {
       "title": "Automation",
       "description": [
-        "Business process automation, service integrations, daily tasks, you could save your business time and money with automation."
+        "Business process automation, service integrations, daily tasks, you could save your business time and money."
       ]
     },
     "advantages": {
       "title": "Advantages",
-      "blurb": "We've used various process automation tools to help businesses before, and we have the technical know how to turn complicated tasks into a breath of fresh air.",
+      "blurb": "Your business could be streamlined in ways you hand't thought of before. We've used various process automation tools to help businesses before, and we have the technical know how to turn complicated tasks into a breath of fresh air.",
       "cards": [
         {
           "title": "Experience",
@@ -410,19 +410,19 @@
       "pages": [
         { 
           "title": "Consultation",
-          "content": "We will hear you out to ensure that we both understand your needs and how we can achieve them."
+          "content": "We will hear you out to ensure that we both understand your needs and know how we can achieve them.  The consultation phase can be a great opportunity to describe your business processes and brain storm ways to speed things up, reduce errors, and make it more convenient."
         },
         { 
           "title": "Planning",
-          "content": "Once we understand the business requirements, we’ll draw up the technological requirements and break it down into milestones that can be tracked by you and your team"
+          "content": "Based on your business processes and the goals expressed through the consultation, we’ll draw up the technical requirements and break it down into milestones that can be tracked by you and your team."
         },
         {
           "title": "Implementation",
-          "content": "At this stage we will begin converting your business process into a streamlined workflow."
+          "content": "At this stage we will begin converting your business process into a streamlined workflow.  Your milestones will be communicated with you as they are solved so you can provide feedback and make sure it meets your expectations.  Solutions that require custom development will take more time to implement, but our communcation will keep you feeling confident that the project is ticking along nicely."
         },
         {
           "title": "Delivery",
-          "content": "You will receive your new solution and can turn it on, it will be ready to go!"
+          "content": "You will receive your new automation solution, sometimes you can just turn it on and it will be ready to go!  For more elaborate solutions you may need to install some software or hosting and we'll support you through that."
         }
       ],
       "price": {

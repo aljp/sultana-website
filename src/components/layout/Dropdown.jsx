@@ -8,8 +8,9 @@ const ServicesDropdown = (props) => {
     <div onMouseLeave={onMouseLeave}>
       <ul className={`ServicesDropDown ${active ? 'active' : ''}`} >
         <Link to="/development"><li>Development</li></Link>
-        <Link to="/optimisation"><li>Optimisation</li></Link>
+        <Link to="/support"><li>Support</li></Link>
         <Link to="/analytics"><li>Analytics</li></Link>
+        <Link to="/automation"><li>Automation</li></Link>
       </ul>
     </div>
   )
