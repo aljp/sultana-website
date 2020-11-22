@@ -1,8 +1,7 @@
 import React from 'react';
-import Img from 'gatsby-image';
 
 const Questionnaire = (props) => {
-  const { content, image, page } = props;
+  const { content, page } = props;
   const { fullName, role, questionnaire } = content;
 
   return (

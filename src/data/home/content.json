@@ -5,15 +5,15 @@
   },
   "serviceCards": [
     {
-      "name": "Web Development",
+      "name": "Development",
       "content": "Innovative application development in a range of technologies. From e-commerce webpages to full feature applications.",
       "body": "Be confident your application is built efficient and secure, from prototyping to deployment, using the latest and greatest in technology.",
       "icon": "development"
     },
     {
-      "name": "Page Optimisation",
+      "name": "Optimisation",
       "content": "Spruce up your website to ensure the perfect experience for both humans and web crawlers.",
-      "body": "Poor performance can affect your ranking on google and conversion rate. Our optimisation packages identify and solve performance issues hurting your bottom line.",
+      "body": "Poor performance can affect your ranking on google and conversion rate, we can identify and solve performance issues hurting your bottom line.",
       "icon": "optimization"
     },
     {
