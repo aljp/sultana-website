@@ -48,10 +48,14 @@
       }
 
       .ServicesDropDown {
-        position: absolute;
+        position: relative;
         top: 40px;
         left: -40px;
         background-color: $sultana-primary;
+        
+        @media (min-width: 901px){
+          position: absolute;
+        }
 
         li {
           padding: 10px 40px;

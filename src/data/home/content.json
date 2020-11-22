@@ -369,5 +369,66 @@
         "description": "Our pricing is competitive, and is tailored to your needs.  Smaller projects such a Google Analytics customisation, can start from as little as $300.  For larger projects such as custom dashboards or complete data piplines a price will be quoted after your free consultation."
       }
     }
+  },
+  "automation": {
+    "shared": {
+      "consultation": {
+        "title": "Get a free consultation",
+        "content": "The best way to contact us is by using this form and we will get back to you as soon as we can. Consultations are free of charge. The more descriptive your request is the better so we can adequately prepare your consultation."
+      }
+    },
+    "header": {
+      "title": "Automation",
+      "description": [
+        "Business process automation, service integrations, daily tasks, you could save your business time and money with automation."
+      ]
+    },
+    "advantages": {
+      "title": "Advantages",
+      "blurb": "We've used various process automation tools to help businesses before, and we have the technical know how to turn complicated tasks into a breath of fresh air.",
+      "cards": [
+        {
+          "title": "Experience",
+          "content": "We have over 10 years experience in the software industry, there aren't many problems you can across in development that we haven't solved already. You can guarantee we will get the job done and done well"
+        },
+        {
+          "title": "Simple",
+          "content": "Avoid using code whenever possible to make it easier for you.  That means we're using the right products or services for the task.  You'll mostly be working with intuitive interfaces and helpful documentation, and thats only if you need to do anything at all."
+        },
+        {
+          "title": "Maintainable",
+          "content": "Keep maintenance to a minimum.  If you need to customise or upgrade your process then a simple solution makes that a breeze, we can do it for you or help you find someone who will."
+        },
+        {
+          "title": "Custom",
+          "content": "To automate complicated processes you might need some custom development work.  We have the skill set to automate the most unruly of processes."
+        }
+      ]
+    },
+    "breakdown": {
+      "title": "Our Software Life Cycle",
+      "pages": [
+        { 
+          "title": "Consultation",
+          "content": "We will hear you out to ensure that we both understand your needs and how we can achieve them."
+        },
+        { 
+          "title": "Planning",
+          "content": "Once we understand the business requirements, we’ll draw up the technological requirements and break it down into milestones that can be tracked by you and your team"
+        },
+        {
+          "title": "Implementation",
+          "content": "At this stage we will begin converting your business process into a streamlined workflow."
+        },
+        {
+          "title": "Delivery",
+          "content": "You will receive your new solution and can turn it on, it will be ready to go!"
+        }
+      ],
+      "price": {
+        "amount": 300,
+        "description": "Price includes consultation, planning, implementation and deployment. The exact price will vary depending on the nature of the application and the work involved. Pricing is a flat fee based off our best estimation of the work, applied to an hourly rate."
+      }
+    }
   }
 }
