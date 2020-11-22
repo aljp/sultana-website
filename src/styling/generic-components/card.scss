@@ -29,7 +29,9 @@ $corner-size: 36px;
       }
     }
   }
+  
   .service-card {
+    color: black;
     height: 100%;
     text-align: center;
     overflow-y: hidden;
@@ -94,4 +96,5 @@ $corner-size: 36px;
       transition: stroke-dasharray 0.5s;
     }
   }
+  
 }

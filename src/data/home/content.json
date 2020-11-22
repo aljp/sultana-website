@@ -1,32 +1,32 @@
 {
   "panelContent": {
-    "whoWeAre": "Sultana Digital is a new Sydney based digital agency started by two longtime friends with a passion for technology. After working in the industry for 10 years, we were dissatisfied with the quality of work being produced by many existing agencies and they take advantage of their customers. We decided to take the plunge and start a business with a focus on quality, honesty and no-nonsense.",
-    "whatWeDo": "We service all aspects the web development, with a focus on applications and e-commerce. From performance and optimisation improvements to fully fledged custom applications, we leverage our experience across a range of technologies to deliver to your needs."
+    "whoWeAre": "Sultana Digital is a new Sydney based digital agency started by two longtime friends with a passion for technology. We offer technical solutions for business and organisations with a focus on quality, honesty and no-nonsense.",
+    "whatWeDo": "We service all aspects the web development, with a focus on applications, e-commerce, analytics and automation. From performance and optimisation improvements to fully fledged custom applications, we leverage our experience across a range of technologies to deliver."
   },
   "serviceCards": [
     {
       "name": "Development",
       "content": "Innovative application development in a range of technologies. From e-commerce webpages to full feature applications.",
       "body": "Be confident your application is built efficient and secure, from prototyping to deployment, using the latest and greatest in technology.",
-      "icon": "development"
+      "type": "development"
     },
     {
-      "name": "Optimisation",
-      "content": "Spruce up your website to ensure the perfect experience for both humans and web crawlers.",
-      "body": "Poor performance can affect your ranking on google and conversion rate, we can identify and solve performance issues hurting your bottom line.",
-      "icon": "optimization"
+      "name": "Support",
+      "content": "Improve web performance, search engine optimisation tooling, updates, tweaks and changes.",
+      "body": "We offer low-cost support solutions with a simple process and a fast turnaround.",
+      "type": "support"
     },
     {
-      "name": "Search Engine Optimisation",
-      "content": "SEO tooling, integration and assistance to maximise your reach and conversions.",
-      "body": "All aspects of technical SEO as well as assistance in integrating SEO into your marketing campaign.",
-      "icon": "seo"
+      "name": "Automation",
+      "content": "Process automation consulting, implementation and execution.",
+      "body": "Make the most out of your resources by automating time-consuming tasks. Zapier, UiPath or bespoke solutions available",
+      "type": "automation"
     },
     {
       "name": "Analytics",
       "content": "Leverage your data and have it presented in a format that is human readable and distributable.",
       "body": "Graphing, report generation, tooling can be leveraged to deliver meaningful business value.",
-      "icon": "analytics"
+      "type": "analytics"
     }
   ],
   "aboutUs": {
@@ -263,9 +263,9 @@
       }
     },
     "header": {
-      "title": "Optimisation",
+      "title": "Support",
       "description": [
-        "A fast website improves customer confidence and drives sales."
+        "Fast and simple process for maintenance, tweaks and changes to your web service."
       ]
     },
     "advantages": {
@@ -367,6 +367,67 @@
       "price": {
         "amount": 300,
         "description": "Our pricing is competitive, and is tailored to your needs.  Smaller projects such a Google Analytics customisation, can start from as little as $300.  For larger projects such as custom dashboards or complete data piplines a price will be quoted after your free consultation."
+      }
+    }
+  },
+  "automation": {
+    "shared": {
+      "consultation": {
+        "title": "Get a free consultation",
+        "content": "The best way to contact us is by using this form and we will get back to you as soon as we can. Consultations are free of charge. The more descriptive your request is the better so we can adequately prepare your consultation."
+      }
+    },
+    "header": {
+      "title": "Automation",
+      "description": [
+        "Business process automation, service integrations, daily tasks, you could save your business time and money."
+      ]
+    },
+    "advantages": {
+      "title": "Advantages",
+      "blurb": "Your business could be streamlined in ways you hand't thought of before. We've used various process automation tools to help businesses before, and we have the technical know how to turn complicated tasks into a breath of fresh air.",
+      "cards": [
+        {
+          "title": "Experience",
+          "content": "We have over 10 years experience in the software industry, there aren't many problems you can across in development that we haven't solved already. You can guarantee we will get the job done and done well"
+        },
+        {
+          "title": "Simple",
+          "content": "Avoid using code whenever possible to make it easier for you.  That means we're using the right products or services for the task.  You'll mostly be working with intuitive interfaces and helpful documentation, and thats only if you need to do anything at all."
+        },
+        {
+          "title": "Maintainable",
+          "content": "Keep maintenance to a minimum.  If you need to customise or upgrade your process then a simple solution makes that a breeze, we can do it for you or help you find someone who will."
+        },
+        {
+          "title": "Custom",
+          "content": "To automate complicated processes you might need some custom development work.  We have the skill set to automate the most unruly of processes."
+        }
+      ]
+    },
+    "breakdown": {
+      "title": "Our Software Life Cycle",
+      "pages": [
+        { 
+          "title": "Consultation",
+          "content": "We will hear you out to ensure that we both understand your needs and know how we can achieve them.  The consultation phase can be a great opportunity to describe your business processes and brain storm ways to speed things up, reduce errors, and make it more convenient."
+        },
+        { 
+          "title": "Planning",
+          "content": "Based on your business processes and the goals expressed through the consultation, we’ll draw up the technical requirements and break it down into milestones that can be tracked by you and your team."
+        },
+        {
+          "title": "Implementation",
+          "content": "At this stage we will begin converting your business process into a streamlined workflow.  Your milestones will be communicated with you as they are solved so you can provide feedback and make sure it meets your expectations.  Solutions that require custom development will take more time to implement, but our communcation will keep you feeling confident that the project is ticking along nicely."
+        },
+        {
+          "title": "Delivery",
+          "content": "You will receive your new automation solution, sometimes you can just turn it on and it will be ready to go!  For more elaborate solutions you may need to install some software or hosting and we'll support you through that."
+        }
+      ],
+      "price": {
+        "amount": 300,
+        "description": "Price includes consultation, planning, implementation and deployment. The exact price will vary depending on the nature of the application and the work involved. Pricing is a flat fee based off our best estimation of the work, applied to an hourly rate."
       }
     }
   }
